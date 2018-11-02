@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  src: url('./fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,3 +18,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.basket.container {
+  width: 7em;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  margin-right: 3em;
+  margin-top: 2em;
+}
+
+#basket {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* COLOR LIST
+  - blue: #2C4663
+*/
