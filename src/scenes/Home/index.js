@@ -3,6 +3,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 
 import Compra from './components/Compra';
 
+import './styles.css'
+
 export default class Home extends React.Component {
     render() {
         document.title = "Atarraya";
@@ -14,10 +16,12 @@ export default class Home extends React.Component {
                 render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>
-                            <div className="section" style={{ backgroundImage: `url("home-background.jpg")` }}>
-                                <h3>Section 1</h3>
-                                <button onClick={() => fullpageApi.moveSectionDown()}>
-                                Move down
+                            <div className="section" id="section1" style={{ backgroundImage: `url("home-background.jpg")` }}>
+
+                                <img src="images/atarrayaLogo.svg" alt="images/atarrayaLogo.png" id="logo" />
+
+                                <button id="moveDownButton" style={{background: `url("images/arrowDown.png")`}} onClick={() => fullpageApi.moveSectionDown()}>
+                                
                                 </button>
                             </div>
                             <Compra />

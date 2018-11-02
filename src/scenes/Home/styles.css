@@ -1,0 +1,21 @@
+#section1{
+  text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#moveDownButton{
+  top: 90vh;
+  left: 50vw;
+  height: 43px;
+  width: 70px;
+  border: none;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  margin: 0px;
+  margin-left: -35px;
+}
+
+#logo{
+  height: 50%;
+}
