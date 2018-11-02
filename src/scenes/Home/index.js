@@ -5,10 +5,11 @@ import Compra from './components/Compra';
 
 export default class Home extends React.Component {
     render() {
+        document.title = "Atarraya";
         return (
             <ReactFullpage
                 licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-                anchors={['home', 'secondPage', 'thirdPage']}
+                anchors={['home', 'compra', 'thirdPage']}
                 // sectionsColor={['#282c34', '#ff5f45', '#0798ec']}
                 render={({ state, fullpageApi }) => {
                     return (
@@ -19,12 +20,7 @@ export default class Home extends React.Component {
                                 Move down
                                 </button>
                             </div>
-                            <div className="section">
-                                {/* <div className="slide"> Slide 1 </div>
-                                <div className="slide"> Slide 2 </div>  
-                                <div className="slide"> Slide 3 </div> */}
-                                <Compra />
-                            </div>
+                            <Compra />
                             <div className="section">
                                 <h3>Section 3</h3>
                             </div>

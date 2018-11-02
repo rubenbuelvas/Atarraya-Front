@@ -10,7 +10,6 @@
   src: url("fonts/MyriadPro-Light.otf") format("opentype");
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -19,11 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: MyriadPro !important;
 }
 
 .basket.container {
