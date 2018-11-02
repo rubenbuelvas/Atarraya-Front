@@ -3,10 +3,11 @@
   font-style: normal;
   src: url('./fonts/BebasNeue-Regular.ttf') format('truetype');
 }
+
 @font-face {
-font-family: MyriadPro;
-    font-weight: thin;
-    src: url("fonts/MyriadPro-Light.otf") format("opentype");
+  font-family: MyriadPro;
+  font-weight: thin;
+  src: url("fonts/MyriadPro-Light.otf") format("opentype");
 }
 
 
