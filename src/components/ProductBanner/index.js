@@ -5,7 +5,7 @@ import './styles.css';
 export default class ProductBanner extends React.Component {
     render() {
         return (
-            <div class="product banner">
+            <div className="product banner">
                 <div className="wrapper">
                     <img src="images/pescado.png" alt=""/>
                 </div>

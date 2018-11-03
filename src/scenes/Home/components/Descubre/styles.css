@@ -1,0 +1,38 @@
+#descubreHeader {
+    position: absolute;
+
+    bottom: 0.285em;
+    left: 0;
+
+    font-size: 20em;
+    font-family: 'Bebas Neue';
+
+    color: white;
+}
+
+#descubrePhoto{
+    position: absolute;
+    top: 5vh;
+    right: 15vw;
+    width: 40%;
+    height: auto;
+}
+
+#toBlog {
+    width: 28em;
+    height: 28em;
+    background-color: #c1395f;
+    text-align: center;
+    line-height: 28em;
+    color: white;
+    font-family: 'Bebas Neue';
+    border-radius: 14em;
+    position: absolute;
+    z-index: 1;
+    left: 35vh;
+    top: 25vh;
+}
+
+#toBlog span {
+    font-size: 7em;
+}

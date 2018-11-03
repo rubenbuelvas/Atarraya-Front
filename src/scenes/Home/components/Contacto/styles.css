@@ -1,0 +1,16 @@
+#title{
+    position: absolute;
+    left: -1.5vw;
+    width: 102.75vw;
+    font-size: 15.1em;
+    font-family: 'Bebas Neue';
+    color: white;
+    text-align: center;
+}
+
+#contactoSection{
+    background-size: 100%;
+    text-align: center !important;
+    align-content: center;
+
+}
