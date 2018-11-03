@@ -19,8 +19,6 @@ export default class Home extends React.Component {
                     return (
                         <ReactFullpage.Wrapper>
                             
-                            <Contacto />
-                            
                             <div className="section" id="section1" style={{ backgroundImage: `url("home-background.jpg")` }}>
 
                                 <img src="images/atarrayaLogo.svg" alt="images/atarrayaLogo.png" id="logo" />
@@ -33,6 +31,8 @@ export default class Home extends React.Component {
                             <Compra />
 
                             <Descubre />
+
+                            <Contacto />
 
                         </ReactFullpage.Wrapper>
                     );
