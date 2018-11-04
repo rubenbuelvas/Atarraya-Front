@@ -1,0 +1,14 @@
+.basket.container {
+    width: 7em;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-right: 3em;
+    margin-top: 2em;
+  }
+  
+  #basket {
+    display: block;
+    width: 100%;
+    height: auto;
+  }

@@ -11,7 +11,7 @@ export default class Compra extends React.Component {
                         <span>MARKET</span>
                     </div>
                 <ProductBanner />
-                <div id="compraHeader">#COMPRA</div>
+                <div className="huge header" id="compraHeader">#COMPRA</div>
             </div>
         );
     }
