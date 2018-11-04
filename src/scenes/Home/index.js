@@ -5,34 +5,44 @@ import BasketIcon from 'components/BasketIcon';
 
 import Compra from './components/Compra';
 import PideYa from './components/PideYa';
+import Descubre from './components/Descubre';
+import Contacto from './components/Contacto';
+
+import './styles.css'
 
 export default class Home extends React.Component {
     render() {
         document.title = "Atarraya";
         return (
-            <div>
-                <BasketIcon />
-                <ReactFullpage
-                    licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-                    anchors={['home', 'compra', 'pideya']}
-                    // sectionsColor={['#282c34', '#ff5f45', '#0798ec']}
-                    render={({ state, fullpageApi }) => {
-                        return (
-                            <ReactFullpage.Wrapper>
-                                <div className="section" style={{ backgroundImage: `url("home-background.jpg")` }}>
-                                    <h3>Section 1</h3>
-                                    <button onClick={() => fullpageApi.moveSectionDown()}>
-                                    Move down
-                                    </button>
-                                </div>
-                                <Compra />
-                                <PideYa />
-                            </ReactFullpage.Wrapper>
-                        );
-                    }}
-                />
+            <ReactFullpage
+                licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
+                anchors={['home', 'compra', 'descubre', 'contacto']}
+                // sectionsColor={['#282c34', '#ff5f45', '#0798ec']}
+                render={({ state, fullpageApi }) => {
+                    return (
+                        <ReactFullpage.Wrapper>
+                            
+                            <div className="section" id="section1" style={{ backgroundImage: `url("home-background.jpg")` }}>
 
-            </div>
+                                <img src="images/atarrayaLogo.svg" alt="images/atarrayaLogo.png" id="logo" />
+
+                                <button id="moveDownButton" style={{background: `url("images/arrowDown.png")`}} onClick={() => fullpageApi.moveSectionDown()}>
+                                
+                                </button>
+                            </div>>
+                            
+                            <Compra />
+
+                            <PideYa />
+
+                            <Descubre />
+
+                            <Contacto />
+
+                        </ReactFullpage.Wrapper>
+                    );
+                }}
+            />
         );
     }
 }

@@ -1,19 +1,26 @@
 #compraHeader {
     position: absolute;
-    bottom: 0.285em;
+    /* bottom: 0.285em; */
+
+    bottom: 11vh;
     right: 0;
+
+    font-size: 20vw;
+    font-family: 'Bebas Neue';
+
+    color: #2C4663;
 }
 
 
 #toMarket {
-    width: 40vh;
-    height: 40vh;
+    width: 23vw;
+    height: 23vw;
     background-color: #E95A24;
     text-align: center;
-    line-height: 28em;
+    line-height: 23vw;
     color: white;
     font-family: 'Bebas Neue';
-    border-radius: 14em;
+    border-radius: 11.5vw;
     position: absolute;
     z-index: 1;
     left: 35vh;
@@ -21,5 +28,5 @@
 }
 
 #toMarket span {
-    font-size: 10vh;
+    font-size: 7vw;
 }
