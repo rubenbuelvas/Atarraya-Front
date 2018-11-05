@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import BasketIcon from 'components/BasketIcon';
-
 import Compra from './components/Compra';
 import PideYa from './components/PideYa';
 import Descubre from './components/Descubre';

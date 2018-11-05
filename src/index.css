@@ -10,6 +10,13 @@
   src: url("fonts/MyriadPro-Light.otf") format("opentype");
 }
 
+
+@font-face {
+  font-family: 'Bebas Neue Light';
+  font-weight: thin;
+  src: url("fonts/BebasNeue\ Regular.otf") format("opentype");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -19,21 +26,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: MyriadPro !important;
+  -webkit-text-size-adjust: none;
 }
 
 .huge.header {
     color: #2C4663;
     font-family: 'Bebas Neue';
-    font-size: 26em;
+    font-size: 25em;
 }
 
 .big.header {
-  color: #E95A24;
-  font-family: 'Bebas Neue';
+  color: #FF6B3E;
+  font-family: 'Bebas Neue Light';
   font-size: 6em;
 }
 
 /* COLOR LIST
   - blue: #2C4663
-  - orange: #E95A24
+  - orange: #FF6B3E
 */

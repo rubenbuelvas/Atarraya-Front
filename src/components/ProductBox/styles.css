@@ -1,0 +1,33 @@
+.product.box {
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+
+    background-color: #2C4663;
+    margin: 15px;
+
+    text-transform: uppercase;
+    color: white;
+
+    cursor: pointer;
+}
+
+.product.box p {
+    text-decoration: underline;
+}
+
+.product.box .wrapper {
+    width: 10vw;
+    margin: auto;
+}
+
+.product.box .wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product.box > .description {
+    text-align: center;
+    font-size: 1vw !important;
+}

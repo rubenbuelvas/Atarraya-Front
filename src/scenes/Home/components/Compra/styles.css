@@ -25,6 +25,7 @@
     z-index: 1;
     left: 35vh;
     top: 25vh;
+    cursor: pointer;
 }
 
 #toMarket span {

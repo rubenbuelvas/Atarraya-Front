@@ -14,7 +14,7 @@ import './index.css';
 ReactDOM.render((
     <BrowserRouter>
       <div id="app">
-        {/* <BasketIcon /> */}
+        <BasketIcon />
         <Switch>
               <Route path="/" component={Home} />
               <Route exact path="/404" component={NotFound} />
