@@ -1,35 +1,27 @@
-.product.banner {
-    background-color: #2C4663;
-    height: 60vh;
-    width: 30vw;
+.footer.wrapper {
     position: absolute;
-    right: 20vh;
-    top: 0;
-    text-transform: uppercase;
-    color: white;
+    left: 50%;
+    bottom: 0;
 }
 
-.product.banner a {
-    color: white;
-    text-decoration: underline;
+#footer {
+    position: relative;
+    background-color: white;
+    height: 41vh;
+    width: 85vw;
+    left: -50%;
+    text-align: left;
 }
 
-.product.banner .wrapper {
-    width: 20vw;
+#footer span {
+    font-size: 5em;
+    font-family: 'Bebas Neue';
+    color: #2C4663;
+    cursor: pointer;
+}
+
+.first.column img {
     margin: auto;
-}
-
-.product.banner .wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.product.banner > .description {
-    text-align: center;
-    font-size: 2.5em;
-}
-
-.product.banner .description .angle.icon {
-    margin-top: 8vh;
+    width: 15vw;
+    height: 15vw;
 }
