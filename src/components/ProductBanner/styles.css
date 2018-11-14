@@ -9,11 +9,6 @@
     color: white;
 }
 
-.product.banner a {
-    color: white;
-    text-decoration: underline;
-}
-
 .product.banner .wrapper {
     width: 20vw;
     margin: auto;
@@ -30,6 +25,12 @@
     font-size: 2vw !important;
 }
 
-.product.banner .description .angle.icon {
-    margin-top: 8vh;
+.product.banner p {
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+}
+
+.product.banner i {
+    padding-bottom: 5vh;
 }
