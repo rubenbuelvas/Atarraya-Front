@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
                         <div className="first four wide column">
                             <img src="images/logo.png" alt="Atarraya logo" />
                         </div>
-                        <div className="second eight wide column">
+                        <div id="footer-links" className="second eight wide column">
                             <div className="ui two column grid">
                                 <div className="column">
                                     <a href="/">Home</a><br/>
@@ -25,9 +25,11 @@ export default class Footer extends React.Component {
                                 </div>
                             </div>
                         </div> 
-                        <div className="third four wide column">
-                            <a>#SIGUENOS</a>
-                            <i className="huge instagram icon"></i><i className="huge facebook icon"></i>
+                        <div id="footer-social" className="third four wide column">
+                            <a id="footer-title">#SIGUENOS</a>
+                            <a href="https://www.instagram.com/atarraya.fishmarket/" target="_blank"><i className="huge instagram icon"></i></a>
+                            <a href="https://www.facebook.com/atarraya.co/" target="_blank"><i className="huge facebook icon"></i></a>
+                            
                         </div>
                     </div>              
                 </div>
