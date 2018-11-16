@@ -13,15 +13,35 @@
     text-align: left;
 }
 
-#footer span {
-    font-size: 5em;
+#footer a {
+    font-size: 4.5em;
     font-family: 'Bebas Neue';
     color: #2C4663;
+    display: block;
+    margin-bottom: 2.5vh;
     cursor: pointer;
 }
 
+.first.column {
+    text-align: center;
+    line-height: 41vh;
+}
+
 .first.column img {
-    margin: auto;
-    width: 15vw;
-    height: 15vw;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13vw;
+}
+
+.second.column, .third.column {
+    padding-top: 10vh !important;
+    letter-spacing: 4px;
+}
+
+.third.column span {
+    font-size: 6em !important;
+}
+
+.third.column i {
+    color: #2C4663;
 }
