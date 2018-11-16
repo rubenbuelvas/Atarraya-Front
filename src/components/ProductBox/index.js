@@ -4,18 +4,24 @@ import './styles.css';
 
 export default class ProductBox extends React.Component {
     render() {
-        return (
-            <div className="product box">
-                <div className="wrapper">
-                    <img src="images/pescado.png" alt=""/>
-                </div>
+        const { product } = this.props;
 
-                <div className="description">
-                    <p>
-                    Filete de salmón <br/> (250 <span style={{textTransform: 'lowercase'}}>g</span>) <br/> $12.500
-                    </p>
+        if(product) {
+            return (
+                <div className="product box">
+                    <div className="wrapper">
+                        <img src={product.image_url} alt=""/>
+                    </div>
+    
+                    <div className="description">
+                        <p>
+                        <span style={{textTransform: 'uppercase'}}>{product.name}</span><br/> ({product.weight}) <br/> ${product.price}
+                        </p>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        } else {
+            return 'Loading...';
+        }
     }
 }

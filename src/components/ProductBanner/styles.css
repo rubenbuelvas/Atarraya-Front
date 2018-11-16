@@ -5,7 +5,6 @@
     position: absolute;
     right: 20vh;
     top: 0;
-    text-transform: uppercase;
     color: white;
 }
 
@@ -20,7 +19,7 @@
   height: auto;
 }
 
-.product.banner > .description {
+.product.banner .description {
     text-align: center;
     font-size: 2vw !important;
 }
@@ -33,4 +32,5 @@
 
 .product.banner i {
     padding-bottom: 5vh;
+    cursor: pointer;
 }
