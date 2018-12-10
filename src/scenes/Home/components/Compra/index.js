@@ -1,6 +1,8 @@
 import React from 'react';
 import ProductBanner from 'components/ProductBanner';
 
+import { data } from 'api';
+
 import './styles.css';
 
 export default class Compra extends React.Component {
@@ -10,7 +12,7 @@ export default class Compra extends React.Component {
                     <div id="toMarket">
                         <span>MARKET</span>
                     </div>
-                <ProductBanner products={[]}/>
+                <ProductBanner products={data}/>
                 <div className="huge header" id="compraHeader">#COMPRA</div>
             </div>
         );

@@ -1,0 +1,16 @@
+#third .header {
+    color: white;
+    font-family: 'Bebas Neue Light';
+    font-size: 16vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#third .ui.grid .two.wide.column {
+    text-align: center;
+}
+
+#third i {
+    margin-top: 8vw;
+    color: white;
+}

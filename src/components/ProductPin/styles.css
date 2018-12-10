@@ -1,0 +1,22 @@
+.product.pin {
+    background-color: white;
+    width: 22vw;
+    height: 22vw;
+    border-radius: 11vw;
+    text-align: center;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.product.pin img {
+    max-height: 80%;
+}
+
+.product.pin p {
+    margin-top: -2.5vw;
+    color: #2C4663;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.3vw;
+}

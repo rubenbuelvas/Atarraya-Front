@@ -15,8 +15,8 @@ export default class MarketHome extends React.Component {
         return (
             <ReactFullpage
                 licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-                anchors={['home', 'buy']}
-                sectionsColor={['#fff', '#2C4663', '#fff', '#2C4663', '#fff', '#2C4663', '#fff', '#2C4663']}
+                anchors={['home', 'buy', 'mas-vendidos', 'promocion']}
+                sectionsColor={['#fff', '#2C4663', '#2C4663', '#2C4663', '#fff', '#2C4663', '#fff', '#2C4663']}
                 render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>

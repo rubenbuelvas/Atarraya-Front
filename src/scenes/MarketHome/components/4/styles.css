@@ -1,0 +1,36 @@
+#fourth  h1 {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    color: white;
+    font-family: 'Bebas Neue Light';
+    font-size: 15vw;
+}
+
+#fourth img {
+    margin-left: 8vw;
+}
+
+#fourth .pin {
+    top: 45%;
+    left: 20%;
+    position: absolute;
+    width: 26vw;
+    height: 26vw;
+    border-radius: 13vw;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    color: #2C4663;
+    font-family: 'Bebas Neue';
+}
+
+#fourth .pin .header {
+    margin-top: 10vw;
+    font-size: 10vw;
+}
+
+#fourth .pin p {
+    margin-top: 3vw;
+    font-size: 5vw;
+}
