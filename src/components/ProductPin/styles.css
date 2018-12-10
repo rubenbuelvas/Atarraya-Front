@@ -6,6 +6,7 @@
     text-align: center;
     right: 0;
     margin: auto;
+    color: #2C4663;
     cursor: pointer;
 }
 
@@ -15,7 +16,6 @@
 
 .product.pin p {
     margin-top: -2.5vw;
-    color: #2C4663;
     text-decoration: underline;
     font-weight: bold;
     font-size: 1.3vw;
