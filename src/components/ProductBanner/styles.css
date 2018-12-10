@@ -1,10 +1,7 @@
 .product.banner {
-    background-color: #2C4663;
+    /* background-color: #2C4663; */
     height: 60vh;
     width: 30vw;
-    position: absolute;
-    right: 20vh;
-    top: 0;
     color: white;
 }
 

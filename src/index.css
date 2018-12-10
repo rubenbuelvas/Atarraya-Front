@@ -29,6 +29,10 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+.fp-tableCell {
+  vertical-align: baseline;
+}
+
 .huge.header {
     color: #2C4663;
     font-family: 'Bebas Neue';

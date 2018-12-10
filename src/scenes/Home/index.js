@@ -18,25 +18,16 @@ export default class Home extends React.Component {
                 // sectionsColor={['#282c34', '#ff5f45', '#0798ec']}
                 render={({ state, fullpageApi }) => {
                     return (
-                        <ReactFullpage.Wrapper>
-                            
+                        <ReactFullpage.Wrapper>                            
                             <div className="section" id="section1" style={{ backgroundImage: `url("home-background.jpg")` }}>
-
                                 <img src="images/atarrayaLogo.svg" alt="images/atarrayaLogo.png" id="logo" />
-
                                 <button id="moveDownButton" style={{background: `url("images/arrowDown.png")`}} onClick={() => fullpageApi.moveSectionDown()}>
-                                
                                 </button>
                             </div>>
-                            
                             <Compra />
-
                             <PideYa />
-
                             <Descubre />
-
                             <Contacto />
-
                         </ReactFullpage.Wrapper>
                     );
                 }}

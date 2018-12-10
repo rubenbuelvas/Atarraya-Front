@@ -1,0 +1,33 @@
+#addressInput {
+    margin: auto;
+    padding: 15px;
+
+    margin-top: 5vh;
+
+    color: white;
+    background: #2C4663;
+    width: 63%;
+}
+
+#addressInput .header {
+    font-family: 'Bebas Neue Light';
+    font-size: 7vw;
+    margin-left: 4vw;
+    margin-bottom: 0;
+}
+
+#addressInput .ui.input {
+    margin-top: 0;
+    margin-left: 4vw;
+    width: 80%;
+}
+
+#addressInput input {
+    height: 4vh;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+
+#addressInput input::placeholder {
+    color: white;
+}

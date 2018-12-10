@@ -16,7 +16,6 @@ export default class ProductBanner extends React.Component {
 
     moveLeft() {
         const { i } = this.state;
-        const { products } = this.props;
 
         if(i-1 >= 0) {
             this.setState({ i: i-1 });
@@ -39,7 +38,7 @@ export default class ProductBanner extends React.Component {
         console.log(product);
 
         return (
-            <div className="product banner">
+            <div className="product banner" style={this.props.style}>
                 <div className="wrapper">
                     <img src={product.image_url} alt=""/>
                 </div>

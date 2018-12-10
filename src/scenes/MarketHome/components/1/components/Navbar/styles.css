@@ -1,0 +1,20 @@
+#navbar {
+    margin-top: 5vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    text-align: center;
+}
+
+#navbar .three.wide.column {
+    padding-top: 10vh;
+}
+
+#navbar .four.wide.column img {
+    width: 65%;
+}
+
+.navbar.item {
+    color: #2C4663;
+    font-family: 'Bebas Neue';
+    font-size: 4.5vw;
+}
