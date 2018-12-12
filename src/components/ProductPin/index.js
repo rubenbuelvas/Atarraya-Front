@@ -6,7 +6,7 @@ export default class ProductPin extends React.Component {
     render() {
         const { product } = this.props;
         return (
-            <div className="product pin" style={this.props.style}>
+            <div className="product pin" style={this.props.style} onClick={() => window.location.replace(`/buy/${product.id}`)}>
                 <img src={product.image_url} alt={product.name + "image"}/>
 
                 <p>

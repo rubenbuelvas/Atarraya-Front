@@ -1,5 +1,6 @@
 export const data = [
     {
+        id: 1,
         name: "Filete de salmón",
         weight: "250g",
         price: "12500",
@@ -8,6 +9,7 @@ export const data = [
     },
 
     {
+        id: 2,
         name: "Filete de mojarra",
         weight: "250g",
         price: "12500",

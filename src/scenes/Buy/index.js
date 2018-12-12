@@ -1,12 +1,7 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import First from './components/1';
-import Second from './components/2';
-import Third from './components/3';
-import Fourth from './components/4';
-
-export default class MarketHome extends React.Component {
+export default class Buy extends React.Component {
     render() {
         return (
             <ReactFullpage
@@ -16,10 +11,7 @@ export default class MarketHome extends React.Component {
                 render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>
-                            <First />
-                            <Second />
-                            <Third />
-                            <Fourth />
+                            lalala
                         </ReactFullpage.Wrapper>
                     );
                 }}
