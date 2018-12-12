@@ -5,7 +5,7 @@ export const data = [
         weight: "250g",
         price: "12500",
         available: 10,
-        image_url: 'images/pescado.png'
+        image_url: '/images/pescado.png'
     },
 
     {
@@ -14,6 +14,6 @@ export const data = [
         weight: "250g",
         price: "12500",
         available: 10,
-        image_url: 'images/pescado.png'
+        image_url: '/images/pescado.png'
     },
 ]

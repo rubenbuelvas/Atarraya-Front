@@ -20,15 +20,17 @@ export default class Footer extends React.Component {
                                 </div>
                                 <div className="column">
                                     <a href="/nosotros">Nosotros</a><br/>
-                                    <a href="/contacto">Contacto</a><br/>
-                                    <a href="/faq">FAQ</a>
+                                    <div id="footer-icons">
+                                        <a href="/contacto">Contacto</a><br/>
+                                        <a href="/faq">FAQ</a>
+                                    </div>
                                 </div>
                             </div>
                         </div> 
                         <div id="footer-social" className="third four wide column">
-                            <a id="footer-title">#SIGUENOS</a>
-                            <a href="https://www.instagram.com/atarraya.fishmarket/" target="_blank"><i className="huge instagram icon"></i></a>
-                            <a href="https://www.facebook.com/atarraya.co/" target="_blank"><i className="huge facebook icon"></i></a>
+                            <a id="footer-title" href="/siguenos">#SÍGUENOS</a>
+                            <a rel="noopener noreferrer" href="https://www.instagram.com/atarraya.fishmarket/" target="_blank"><i className="huge instagram icon"></i></a>
+                            <a rel="noopener noreferrer" href="https://www.facebook.com/atarraya.co/" target="_blank"><i className="huge facebook icon"></i></a>
                             
                         </div>
                     </div>              

@@ -1,0 +1,47 @@
+#buyFirst .header {
+    color: #D78D73;
+    font-family: 'Bebas Neue Light';
+    font-size: 12vw;
+    letter-spacing:4px;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.buy-info {
+    float: right;
+    background: #2C4663;
+    width: 45vw;
+    height: 45vh;
+    padding: 3vw;
+    color: white;
+}
+
+.buy-info p {
+    font-size: 1.2vw;
+}
+
+.buy-info .price {
+    font-family: 'Bebas Neue';
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.buy-info .button {
+    background: white;
+    color: #2C4663;
+    text-align: center;
+    line-height: 3vw;
+    font-family: 'Bebas Neue';
+    font-size: 2vw;
+    width: 8vw;
+    height: 3vw;
+    cursor: pointer;
+    display: inline-block
+}
+
+.buy-info .ui.dropdown {
+    height: 3vw;
+    border: transparent !important;
+    border-radius: 0 !important;
+    color: #2C4663 !important;
+}

@@ -35,7 +35,6 @@ export default class ProductBanner extends React.Component {
         const { i } = this.state
         const { products } = this.props;
         const product = products[i];
-        console.log(product);
 
         return (
             <div className="product banner" style={this.props.style}>
