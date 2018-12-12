@@ -1,33 +1,33 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-import Compra from './components/Compra';
-import PideYa from './components/PideYa';
-import Descubre from './components/Descubre';
-import Contacto from './components/Contacto';
+import First from './components/1';
+import Second from './components/2';
+import Third from './components/3';
+import Fourth from './components/4';
+import Fifth from './components/5';
+import Sexth from './components/6';
+import Seventh from './components/7';
+import Eighth from './components/8';
 
-import './styles.css'
-
-export default class Home extends React.Component {
+export default class MarketHome extends React.Component {
     render() {
-        document.title = "Atarraya";
         return (
             <ReactFullpage
                 licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-                anchors={['home', 'compra', 'descubre', 'contacto']}
-                // sectionsColor={['#282c34', '#ff5f45', '#0798ec']}
+                anchors={['home', 'buy', 'mas-vendidos', 'promocion']}
+                sectionsColor={['#fff', '#2C4663', '#2C4663', '#2C4663', '#fff', '#2C4663', '#fff', '#fff']}
                 render={({ state, fullpageApi }) => {
                     return (
-                        <ReactFullpage.Wrapper>                            
-                            <div className="section" id="section1" style={{ backgroundImage: `url("home-background.jpg")` }}>
-                                <img src="images/atarrayaLogo.svg" alt="images/atarrayaLogo.png" id="logo" />
-                                <button id="moveDownButton" style={{background: `url("images/arrowDown.png")`}} onClick={() => fullpageApi.moveSectionDown()}>
-                                </button>
-                            </div>>
-                            <Compra />
-                            <PideYa />
-                            <Descubre />
-                            <Contacto />
+                        <ReactFullpage.Wrapper>
+                            <First />
+                            <Second />
+                            <Third />
+                            <Fourth />
+                            <Fifth />
+                            <Sexth />
+                            <Seventh />
+                            <Eighth />
                         </ReactFullpage.Wrapper>
                     );
                 }}

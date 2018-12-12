@@ -5,10 +5,6 @@ import First from './components/1';
 import Second from './components/2';
 import Third from './components/3';
 import Fourth from './components/4';
-import Fifth from './components/5';
-import Sexth from './components/6';
-import Seventh from './components/7';
-import Eighth from './components/8';
 
 export default class MarketHome extends React.Component {
     render() {
@@ -24,10 +20,6 @@ export default class MarketHome extends React.Component {
                             <Second />
                             <Third />
                             <Fourth />
-                            <Fifth />
-                            <Sexth />
-                            <Seventh />
-                            <Eighth />
                         </ReactFullpage.Wrapper>
                     );
                 }}

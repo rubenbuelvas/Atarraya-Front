@@ -1,28 +1,26 @@
 import React from 'react';
 
 import ProductPin from 'components/ProductPin';
-import { data } from 'api';
 import './styles.css';
 
-export default class Third extends React.Component {
+export default class ProductPinList extends React.Component {
     render() {
+        const { products } = this.props;
         return (
-            <div id="third" className="section">
-                <h2 className="header">#LOSMÁSVENDIDOS</h2>
-
+            <div className="product-list pin">
                 <div className="ui grid">
                     <div className="two wide column">
                         <i className="huge angle left icon"></i>
                     </div>
 
                     <div className="four wide column">
-                        <ProductPin product={data[0]}/>
+                        <ProductPin product={products[0]}/>
                     </div>
                     <div className="four wide column">
-                        <ProductPin product={data[1]}/>
+                        <ProductPin product={products[1]}/>
                     </div>
                     <div className="four wide column">
-                        <ProductPin product={data[0]}/>
+                        <ProductPin product={products[0]}/>
                     </div>
 
                     <div className="two wide column">
@@ -33,4 +31,3 @@ export default class Third extends React.Component {
         );
     }
 }
-

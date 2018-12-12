@@ -1,0 +1,33 @@
+#eighth > .fp-tableCell > .header {
+    color: #2C4663;
+    font-size: 13vw;
+    letter-spacing: 12px;
+    text-align: center;
+    margin-top: 50vh;
+    font-family: 'Bebas Neue Light';
+}
+
+#domiciliario {
+    position: absolute;
+    width: 35vw;
+    top: -10vh;
+    right: 10vw;
+}
+
+#eighth .pin {
+    position: absolute;
+    width: 16vw;
+    height: 16vw;
+    text-align: center;
+    line-height: 17vw;
+    top: 20vh;
+    left: 35vw;
+    border-radius: 8vw;
+    background: #2C4663;
+    color: white;
+}
+
+#eighth .pin .header {
+    font-size: 5vw;
+    font-family: 'Bebas Neue'
+}

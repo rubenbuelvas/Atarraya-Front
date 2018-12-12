@@ -1,0 +1,12 @@
+.product-list.pin {
+    width: 100%
+}
+
+.product-list.pin .two.wide.column {
+    text-align: center;
+}
+
+.product-list.pin i {
+    margin-top: 8vw;
+    color: white;
+}

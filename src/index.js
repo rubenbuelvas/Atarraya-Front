@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 
 import BasketIcon from './components/BasketIcon';
 // import Home from './scenes/Home';
-import Home from './scenes/MarketHome';
+import Market from './scenes/Market';
+import Home from './scenes/Home';
 import NotFound from './scenes/404';
 
 import { Switch, BrowserRouter, Route, Redirect } from 'react-router-dom';
@@ -16,7 +17,8 @@ ReactDOM.render((
       <div id="app">
         <BasketIcon />
         <Switch>
-              <Route path="/" component={Home} />
+              <Route exact path="/" component={Home} />
+              <Route path="/market" component={Market} />
               <Route exact path="/404" component={NotFound} />
               <Redirect to="/404" />
           </Switch>

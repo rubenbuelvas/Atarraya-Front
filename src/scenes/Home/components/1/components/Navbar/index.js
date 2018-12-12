@@ -10,7 +10,7 @@ export default class Navbar extends React.Component {
                     <a href="/" className="navbar item">Home</a>
                 </div>
                 <div className="three wide column">
-                    <a href="/" className="navbar item">Market</a>
+                    <a href="/market" className="navbar item">Market</a>
                 </div>
                 <div className="four wide column">
                     <img src="images/logo_blue_transparent.png" alt=""/>
