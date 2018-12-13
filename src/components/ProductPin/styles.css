@@ -11,12 +11,12 @@
 }
 
 .product.pin img {
-    max-height: 80%;
+    max-height: 75%;
 }
 
 .product.pin p {
-    margin-top: -2.5vw;
+    margin-top: -1.5vw;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 1vw;
 }

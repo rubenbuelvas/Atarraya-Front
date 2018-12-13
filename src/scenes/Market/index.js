@@ -7,6 +7,10 @@ import Third from './components/3';
 import Fourth from './components/4';
 
 export default class MarketHome extends React.Component {
+    componentDidMount() {
+        document.title = "Market | Atarraya - Fish Market";
+    }
+
     render() {
         return (
             <ReactFullpage

@@ -1,16 +1,12 @@
 #marketThird .header {
     color: white;
     font-family: 'Bebas Neue Light';
-    font-size: 12vw;
-    text-align: center;
-    margin-top: 5vh;
+    font-size: 8vw;
+    letter-spacing: 0.8vw;
+    margin-top: 3vh;
+    direction: rtl;
 }
 
-#third .ui.grid .two.wide.column {
-    text-align: center;
-}
-
-#third i {
-    margin-top: 8vw;
-    color: white;
+#marketThird .ui.container {
+    display: block;
 }

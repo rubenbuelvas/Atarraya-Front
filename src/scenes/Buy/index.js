@@ -8,6 +8,11 @@ import Third from './components/3';
 import { data } from 'api';
 
 export default class Buy extends React.Component {
+    componentDidMount() {
+        const { product } = this.props;
+        document.title = `Comprar ${product ? product.name : ''} | Atarraya - Fish Market`;
+    }
+
     render() {
         const { id } = this.props.match.params;
         const product = data[id];

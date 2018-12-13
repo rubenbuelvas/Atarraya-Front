@@ -10,7 +10,11 @@ import Sexth from './components/6';
 import Seventh from './components/7';
 import Eighth from './components/8';
 
-export default class MarketHome extends React.Component {
+export default class Home extends React.Component {
+    componentDidMount() {
+        document.title = "Atarraya - Fish Market";
+    }
+
     render() {
         return (
             <ReactFullpage

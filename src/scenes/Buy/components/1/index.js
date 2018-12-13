@@ -38,7 +38,7 @@ export default class Presentation extends React.Component {
                 <h1 className="header">{product.name}</h1>
 
                 <div className="carrousel"> 
-                    <img src="images/pescado.png" alt=""/>
+                    <img src="/images/pescado.png" alt=""/>
                 </div>
 
                 <div className="buy-info">

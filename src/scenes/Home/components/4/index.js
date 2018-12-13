@@ -7,7 +7,7 @@ export default class Third extends React.Component {
         return (
             <div id="fourth" className="section">
                 <h1 className="header">#FILETES</h1>
-                <img src="images/descubrePhoto.jpg" alt="atún"/>
+                <img src="stock/tocino.jpg" alt="atún"/>
 
                 <div className="pin">
                     <div className="header">15%</div>

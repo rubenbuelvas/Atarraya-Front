@@ -1,17 +1,35 @@
 import React from 'react';
 
-import ProductPinList from 'components/ProductPinList';
+import ProductPin from 'components/ProductPin';
 import { data } from 'api';
 
 import './styles.css';
 
 export default class FirstProduct extends React.Component {
     render() {
+        const width = 16;
         return (
             <div id="marketSecond" className="section">
-                <div className="market lists">
-                    <ProductPinList products={data} />
-                    <ProductPinList products={data} />
+                <div style={{marginLeft: `${width}vw`, marginRight: `${width}vw`}} className="ui three column grid">
+                    <div className="column">
+                        <ProductPin width={width} product={data[0]}/>
+                    </div>
+                    <div className="column">
+                        <ProductPin width={width} product={data[1]}/>
+                    </div>
+                    <div className="column">
+                        <ProductPin width={width} product={data[0]}/>
+                    </div>
+
+                    <div className="column">
+                        <ProductPin width={width} product={data[0]}/>
+                    </div>
+                    <div className="column">
+                        <ProductPin width={width} product={data[1]}/>
+                    </div>
+                    <div className="column">
+                        <ProductPin width={width} product={data[0]}/>
+                    </div>    
                 </div>
             </div>
         );

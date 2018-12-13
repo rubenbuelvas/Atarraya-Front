@@ -1,3 +1,13 @@
-#second {
+#marketSecond {
     vertical-align: middle;
+}
+
+#marketSecond .fp-tableCell {
+    vertical-align: baseline;
+}
+
+#marketSecond .ui.three.column.grid {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }

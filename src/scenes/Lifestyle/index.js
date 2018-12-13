@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
+import First from './components/1';
+
 export default class Lifestyle extends React.Component {
     render() {
         return (
@@ -11,7 +13,7 @@ export default class Lifestyle extends React.Component {
                 render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>
-                            Lifestyle
+                            <First />
                         </ReactFullpage.Wrapper>
                     );
                 }}

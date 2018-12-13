@@ -6,28 +6,34 @@
 
     color: white;
     background: #2C4663;
-    width: 63%;
+    width: 60%;
 }
 
 #addressInput .header {
-    font-family: 'Bebas Neue Light';
+    font-family: 'Bebas Neue';
     font-size: 7vw;
-    margin-left: 4vw;
-    margin-bottom: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: 2vw;
 }
 
 #addressInput .ui.input {
     margin-top: 0;
-    margin-left: 4vw;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
     width: 80%;
 }
 
 #addressInput input {
-    height: 4vh;
+    height: 5vh;
+    border-radius: 6vh !important;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
 }
 
 #addressInput input::placeholder {
     color: white;
+    font-size: 1.4vw;
+    padding-top: 0.5vw;
+    padding-left: 2vw;
 }

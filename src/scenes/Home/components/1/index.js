@@ -1,6 +1,6 @@
 import React from 'react';
+import Navbar from 'components/Navbar';
 import AddressInput from './components/AddressInput';
-import Navbar from './components/Navbar';
 
 export default class Presentation extends React.Component {
 
