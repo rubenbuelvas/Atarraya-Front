@@ -10,7 +10,12 @@
     height: 30vh;
     width: 85vw;
     left: -50%;
-    text-align: left;
+}
+
+#footer > .ui.grid {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #footer-links a {
@@ -18,30 +23,17 @@
     font-family: 'Bebas Neue';
     color: white;
     display: block;
-    margin-bottom: 2.5vh;
+    margin-bottom: 3vh;
     cursor: pointer;
 }
 
-#footer-title{
-    margin: none;
-    font-size: 4.2vw;
-    font-family: 'Bebas Neue';
-    color: white;
-}
-
-#footer-icons {
-    margin: auto;
-}
-
-.first.column {
-    text-align: center;
-    line-height: 15vh;
+#footer-title {
+    display: block;
+    margin-bottom: 3vh;
 }
 
 .first.column img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 13vw;
+    width: 55%;
 }
 
 .second.column, .third.column {

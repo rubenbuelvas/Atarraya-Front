@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './components/Footer';
+import Footer from 'components/Footer';
 
 import './styles.css';
 
@@ -11,7 +11,7 @@ export default class Third extends React.Component {
                 <div className="pin">
                     <div className="header">¡PIDE YA!</div>
                 </div>
-                <img id="domiciliario" src="images/domiciliario.png" alt=""/>
+                <img id="domiciliario" src="/images/domiciliario.png" alt=""/>
                 <Footer />
             </div>
         );

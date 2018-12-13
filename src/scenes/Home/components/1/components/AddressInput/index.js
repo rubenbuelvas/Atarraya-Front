@@ -7,7 +7,8 @@ export default class AddressInput extends React.Component {
         return (
             <div id="addressInput">
                 <div className="header">#Bienvenidos</div>
-                    <div className="ui input">
+                <img id="bogota-input" src="/images/bogota-outline.png" alt=""/>
+                <div className="ui input">
                     <input type="text" placeholder="INGRESA TU DIRECCIÓN"/>
                 </div>
             </div>

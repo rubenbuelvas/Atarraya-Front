@@ -19,7 +19,7 @@ export default class Home extends React.Component {
         return (
             <ReactFullpage
                 licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-                anchors={['home', 'buy', 'mas-vendidos', 'promocion']}
+                anchors={['home', 'buy', 'mas-vendidos', 'promocion', '', '', '', 'footer-section']}
                 sectionsColor={['#fff', '#2C4663', '#2C4663', '#2C4663', '#fff', '#2C4663', '#fff', '#fff']}
                 render={({ state, fullpageApi }) => {
                     return (

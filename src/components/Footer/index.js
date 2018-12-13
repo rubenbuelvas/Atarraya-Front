@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
                 <div id="footer">
                     <div className="ui grid">
                         <div className="first four wide column">
-                            <img src="images/logo.png" alt="Atarraya logo" />
+                            <img src="/images/logo-white.png" alt="Atarraya logo" />
                         </div>
                         <div id="footer-links" className="second eight wide column">
                             <div className="ui two column grid">
