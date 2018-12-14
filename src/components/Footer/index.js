@@ -29,6 +29,8 @@ export default class Footer extends React.Component {
                         </div> 
                         <div id="footer-social" className="third four wide column">
                             <a id="footer-title" href="/siguenos">#SÍGUENOS</a>
+                            <br/>
+                            <br/>
                             <a rel="noopener noreferrer" href="https://www.instagram.com/atarraya.fishmarket/" target="_blank"><i className="huge instagram icon"></i></a>
                             <a rel="noopener noreferrer" href="https://www.facebook.com/atarraya.co/" target="_blank"><i className="huge facebook icon"></i></a>
                             

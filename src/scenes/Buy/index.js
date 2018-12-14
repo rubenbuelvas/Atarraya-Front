@@ -14,8 +14,9 @@ export default class Buy extends React.Component {
     }
 
     render() {
-        const { id } = this.props.match.params;
+        const id = this.props.match.params.id.split("#")[0];
         const product = data[id];
+        
         return (
             <ReactFullpage
                 licenseKey="OPEN-SOURCE-GPLV3-LICENSE"

@@ -4,7 +4,7 @@ import './styles.css';
 
 export default class ProductPin extends React.Component {
     render() {
-        const { width, color, product } = this.props;
+        const { dark, width, color, product } = this.props;
         return (
             <div className="product pin" 
                 style={{
@@ -12,6 +12,7 @@ export default class ProductPin extends React.Component {
                     height: `${width}vw`,
                     borderRadius: `${width/2}vw`,
                     backgroundColor: color,
+                    color: dark ? 'white' : '#2C4663',
                     ...this.props.style}
                 } onClick={() => window.location.replace(`/buy/${product.id}`)}>
                 <img src={product.image_url} alt={product.name + "image"}/>
