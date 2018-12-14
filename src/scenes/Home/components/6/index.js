@@ -1,10 +1,13 @@
 import React from 'react';
 
-export default class Third extends React.Component {
+import './styles.css';
+
+export default class Sixth extends React.Component {
     render() {
         return (
-            <div className="section">
-                <div>6</div>
+            <div id="sixth" className="section">
+                <h1 className="header">#DESCUBRE</h1>
+                <img src="stock/tocino.jpg" alt="atún"/>
             </div>
         );
     }

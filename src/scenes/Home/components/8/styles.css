@@ -1,7 +1,6 @@
 #eighth > .fp-tableCell > .header {
     color: #2C4663;
-    font-size: 13vw;
-    letter-spacing: 12px;
+    font-size: 12.93vw;
     text-align: center;
     margin-top: 50vh;
     font-family: 'Bebas Neue Light';
@@ -10,6 +9,7 @@
 #domiciliario {
     position: absolute;
     width: 35vw;
+    height: auto;
     top: -10vh;
     right: 10vw;
 }
@@ -31,3 +31,4 @@
     font-size: 5vw;
     font-family: 'Bebas Neue'
 }
+

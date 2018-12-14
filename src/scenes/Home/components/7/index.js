@@ -1,10 +1,23 @@
 import React from 'react';
 
-export default class Third extends React.Component {
+import ProductBanner from 'components/ProductBanner';
+import { data } from 'api';
+
+import './styles.css';
+
+const bannerStyles = {
+    // position: 'absolute', 
+    margin: 'auto', 
+    marginTop: '10vh',
+    // left: 'calc(50% - 15vw)',
+    zIndex: '1'
+}
+
+export default class Seventh extends React.Component {
     render() {
         return (
-            <div className="section">
-                <div>7</div>
+            <div id="seventh" className="section">
+                <ProductBanner products={data} style={bannerStyles}/>
             </div>
         );
     }
