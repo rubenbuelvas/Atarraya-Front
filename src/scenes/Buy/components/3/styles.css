@@ -1,7 +1,12 @@
-#third .header {
-    color: white;
+#buy3 .header {
+    color: #2C4663;
     font-family: 'Bebas Neue Light';
-    font-size: 16vw;
-    text-align: center;
+    font-size: 4vw;
+    letter-spacing: 4px;
     margin-top: 5vh;
+    margin-left: 8vw;
+}
+
+#buy-see-also {
+    margin-top: 8vh;
 }

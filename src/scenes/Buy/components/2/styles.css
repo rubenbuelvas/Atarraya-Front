@@ -1,8 +1,18 @@
-#buySecond .header {
+#buy2 .container {
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+#buy2 .ui.grid {
+    margin-top: 3vh;
+}
+
+#buy2 .header {
     font-family: 'Bebas Neue Light';
     letter-spacing: 4px;
-    font-size: 9vw;
+    font-size: 7vw;
     color: #2C4663;
-    margin-left: 8vw;
-    margin-top: 5vw;
+    margin-top: 6.5vh;
+    margin-left: 1vw;
 }
+

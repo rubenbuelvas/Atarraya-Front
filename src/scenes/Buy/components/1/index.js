@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dropdown } from 'semantic-ui-react';
-
+import { tags } from 'api';
+import Tag from './components/Tag';
 import './styles.css';
 
 const weightOptions = [
@@ -20,7 +21,7 @@ const weightOptions = [
     },
 ];
 
-export default class Presentation extends React.Component {
+export default class BuyFirst extends React.Component {
     formatPrice(price) {
         let str = price.toString();
         if(str.length > 3) {
@@ -33,18 +34,32 @@ export default class Presentation extends React.Component {
     render() {
         const { product } = this.props;
         console.log(product);
+
+        if(!product)
+            return <div>Loading...</div>
+
         return (
-            <div id="buyFirst" className="section">
-                <h1 className="header">{product.name}</h1>
+            <div id="buy1" className="section">
+                <div className="header">{product.name}</div>
 
                 <div className="carrousel"> 
                     <img src="/images/pescado.png" alt=""/>
                 </div>
 
                 <div className="buy-info">
-                    <p>Filete de salmón chileno congelado sin espinas, con piel.</p>
-                    
+                    <div className="tags">
+                        <Tag tag={tags[0]}/>
+                        <Tag tag={tags[1]}/>
+                    </div>
+
                     <br/>
+                    <br/>
+
+                    <p>Filete de salmón chileno congelado sin espinas, con piel.</p>
+
+                    <br/>
+                    <br/>
+                    
                     <div className="price">$ {this.formatPrice(product.price)} PESOS</div>
 
                     <div>

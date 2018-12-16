@@ -26,10 +26,17 @@
     margin-bottom: 3vh;
     cursor: pointer;
 }
-
-#footer-title {
-    display: block;
-    margin-bottom: 3vh;
+#footer-icons {
+    margin: auto;
+}
+#footer-title{
+    margin: none;
+    font-size: 4.2vw;
+    font-family: 'Bebas Neue';
+    color: white;
+}
+.first.column {
+    text-align: center;
 }
 
 .first.column img {

@@ -1,4 +1,4 @@
-#eighth > .fp-tableCell > .header {
+#market4 > .fp-tableCell > .header {
     color: #2C4663;
     font-size: 13vw;
     letter-spacing: 12px;
@@ -14,7 +14,7 @@
     right: 10vw;
 }
 
-#eighth .pin {
+#market4 .pin {
     position: absolute;
     width: 16vw;
     height: 16vw;
@@ -27,7 +27,7 @@
     color: white;
 }
 
-#eighth .pin .header {
+#market4 .pin .header {
     font-size: 5vw;
     font-family: 'Bebas Neue'
 }
