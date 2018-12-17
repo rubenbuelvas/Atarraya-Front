@@ -1,0 +1,6 @@
+.recipe.thumbnail div {
+    width: 30vw;
+    height: 30vw;
+    background-size: cover;
+    display: inline-block;
+}

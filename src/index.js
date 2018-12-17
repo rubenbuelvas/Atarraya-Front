@@ -23,7 +23,7 @@ ReactDOM.render((
     <PersistGate loading={(() => <div>Loading</div>)()} persistor={persistor}>
       <BrowserRouter>
         <div id="app">
-          <BasketIcon />
+          {/* <BasketIcon /> */}
           <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/market" component={Market} />

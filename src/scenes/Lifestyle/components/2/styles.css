@@ -1,0 +1,12 @@
+#lifestyle2 {
+    background-size: cover;
+}
+
+#lifestyle2 h1 {
+    position: absolute;
+    bottom: 5vh;
+    left: 3vw;
+    color: white;
+    font-family: 'Bebas Neue Light';
+    font-size: 7vw;
+}

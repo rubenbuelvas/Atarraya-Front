@@ -32,6 +32,10 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+h1 {
+  font-family: 'Bebas Neue Light';
+}
+
 .fp-tableCell {
   vertical-align: baseline;
 }

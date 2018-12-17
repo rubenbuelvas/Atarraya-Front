@@ -1,0 +1,59 @@
+#lifestyle4 .header {
+    color: white;
+    float: right;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
+#lifestyle4 .header h1 {
+    display: inline-block;
+    font-size: 10vw;
+}
+
+#lifestyle4 .header img {
+    height: 10vw;
+    margin-right: 5vw;
+}
+
+#lifestyle4 .pic-container {
+    width: 52vw;
+}
+
+#lifestyle4 .pic {
+    margin-top: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    height: 30vw;
+    background-size: cover;
+}
+
+#lifestyle4 .banner {
+    position: absolute;
+    right: 0;
+    width: 48vw;
+    height: 50vh;
+    background-color: white;
+}
+
+#lifestyle4 .banner h1 {
+    color: #2C4663;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    font-size: 3.5vw;
+    letter-spacing: 1px;
+}
+
+#lifestyle4 .banner p {
+    font-size: 1.4em;
+    font-size: 1vw;
+    margin-left: 8vw;
+    margin-right: 5vw;
+}
+
+#lifestyle4 .banner h2 {
+    margin-left: 8vw;
+    font-family: 'Bebas Neue Light';
+    font-size: 2vw;
+    color: #2C4663;
+}
