@@ -16,20 +16,23 @@
 }
 
 #lifestyle4 .pic-container {
+    float: left;
+    margin-top: 30vh;
     width: 52vw;
 }
 
 #lifestyle4 .pic {
-    margin-top: 25vh;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 30vw;
-    height: 30vw;
+    width: 34vw;
+    height: 32vw;
     background-size: cover;
 }
 
 #lifestyle4 .banner {
     position: absolute;
+    top: 35vh;
     right: 0;
     width: 48vw;
     height: 50vh;
