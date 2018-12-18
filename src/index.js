@@ -7,8 +7,10 @@ import { persistor, store } from './store';
 
 import Market from './scenes/Market';
 import Home from './scenes/Home';
+import Article from './scenes/Article';
 import Buy from './scenes/Buy';
 import Lifestyle from './scenes/Lifestyle';
+import Recipe from './scenes/Recipe';
 import NotFound from './scenes/404';
 
 import BasketIcon from './components/BasketIcon';
@@ -29,6 +31,8 @@ ReactDOM.render((
                 <Route path="/market" component={Market} />
                 <Route path="/buy/:id" component={Buy} />
                 <Route path="/lifestyle" component={Lifestyle} />
+                <Route path="/blog/:id" component={Article} />
+                <Route path="/recipes/:id" component={Recipe} />
                 <Route exact path="/404" component={NotFound} />
                 <Redirect to="/404" />
             </Switch>

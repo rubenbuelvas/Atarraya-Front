@@ -1,15 +1,15 @@
-.recipe.box {
+.article.box {
     text-align: center;
 }
 
-.recipe.box .thumbnail {
+.article.box .thumbnail {
     width: 26vw;
     height: 26vw;
     background-size: cover;
     margin: auto;
 }
 
-.recipe.box p {
+.article.box p {
     margin-top: 1vh;
     font-family: 'Bebas Neue';
     color: #2C4663;
