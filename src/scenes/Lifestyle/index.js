@@ -15,7 +15,7 @@ export default class Lifestyle extends React.Component {
         return (
             <ReactFullpage
                 licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-                anchors={['home', 'buy', 'mas-vendidos', 'promocion']}
+                anchors={['1', '2', '3', '4', '5', '6', '7', '8']}
                 sectionsColor={['#fff', '#fff', '#fff', '#2C4663']}
                 render={({ state, fullpageApi }) => {
                     return (

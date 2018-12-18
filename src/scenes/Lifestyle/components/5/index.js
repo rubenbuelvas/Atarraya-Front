@@ -1,34 +1,12 @@
 import React from 'react';
-import { data } from 'api';
-import ProductPin from 'components/ProductPin';
 
 import './styles.css';
 
-export default class Third extends React.Component {
+export default class Lifestyle5 extends React.Component {
     render() {
         return (
             <div id="fifth" className="section">
-                <h1 className="header">#MARISCOS</h1>
-                
-                <div className="ui grid">
-                    <div className="two wide column">
-                        <i className="huge angle left icon"></i>
-                    </div>
-
-                    <div className="four wide column">
-                        <ProductPin product={data[0]} style={{backgroundColor: '#2C4663', color: 'white'}}/>
-                    </div>
-                    <div className="four wide column">
-                        <ProductPin product={data[0]} style={{backgroundColor: '#2C4663', color: 'white'}}/>
-                    </div>
-                    <div className="four wide column">
-                        <ProductPin product={data[0]} style={{backgroundColor: '#2C4663', color: 'white'}}/>
-                    </div>
-
-                    <div className="two wide column">
-                        <i className="huge angle right icon"></i>
-                    </div>
-                </div>
+                working on it
             </div>
         );
     }

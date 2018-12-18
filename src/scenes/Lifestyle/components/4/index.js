@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-export default class Third extends React.Component {
+export default class Lifestyle4 extends React.Component {
     render() {
         return (
             <div id="lifestyle4" className="section">

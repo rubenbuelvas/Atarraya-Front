@@ -8,7 +8,8 @@ export default class ArticleBox extends React.Component {
         return (
             <div className="recipe box">
                 <a href={`/recipes/${recipe.id}`}>
-                    <img className="thumbnail" src={recipe.imageUrl} alt="Thumbnail"/>
+                    <div style={{backgroundImage: `url("${recipe.imageUrl}")`}} className="thumbnail"></div>
+                    {/* <img className="thumbnail" src={recipe.imageUrl} alt="Thumbnail"/> */}
                     <p>{recipe.title}</p>
                 </a>
             </div>

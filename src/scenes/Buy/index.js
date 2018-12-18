@@ -20,7 +20,7 @@ export default class Buy extends React.Component {
         return (
             <ReactFullpage
                 licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-                anchors={['', 'recipes', 'also']}
+                anchors={['1', '2', '3']}
                 sectionsColor={['#fff', '#fff', '#fff']}
                 render={({ state, fullpageApi }) => {
                     return (

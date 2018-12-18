@@ -6,14 +6,17 @@ import './styles.css';
 
 const articles = [
     {
+        id: 1,
         title: 'La nueva cocina colombiana',
         imageUrl: '/stock/tocino.jpg'
     },
     {
+        id: 2,
         title: 'El influencer que sólo cocina Atarraya',
         imageUrl: '/stock/tocino.jpg'
     },
     {
+        id: 3,
         title: '10 beneficios de comer atún',
         imageUrl: '/stock/tocino.jpg'
     },
