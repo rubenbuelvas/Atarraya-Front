@@ -1,7 +1,12 @@
 import React from 'react';
-import { Dropdown } from 'semantic-ui-react';
+
+import { connect } from 'react-redux';
+import { addToCart } from 'services/session/actions';
 import { tags } from 'api';
+
+import { Dropdown } from 'semantic-ui-react';
 import Tag from './components/Tag';
+
 import './styles.css';
 
 const weightOptions = [
@@ -21,7 +26,17 @@ const weightOptions = [
     },
 ];
 
-export default class BuyFirst extends React.Component {
+class BuyFirst extends React.Component {
+    constructor() {
+        super();
+
+        this.add = this.add.bind(this);
+    }
+    
+    add() {
+        this.props.dispatch(addToCart(this.props.product, 1));  // TODO: amount
+    }
+
     formatPrice(price) {
         let str = price.toString();
         if(str.length > 3) {
@@ -64,7 +79,7 @@ export default class BuyFirst extends React.Component {
 
                     <div>
                     <Dropdown compact placeholder='Selecciona un precio...' selection options={weightOptions} />
-                    <span className="button">Comprar</span>
+                    <span onClick={this.add} className="button">Comprar</span>
 
                     </div>
                 </div>
@@ -72,3 +87,7 @@ export default class BuyFirst extends React.Component {
         );
     }
 }
+
+export default connect((store) => {
+    return {};
+})(BuyFirst);

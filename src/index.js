@@ -9,6 +9,9 @@ import Market from './scenes/Market';
 import Home from './scenes/Home';
 import Article from './scenes/Article';
 import Buy from './scenes/Buy';
+import Login from './scenes/Login';
+import Signup from './scenes/Signup';
+import Profile from './scenes/Profile';
 import Lifestyle from './scenes/Lifestyle';
 import Recipe from './scenes/Recipe';
 import NotFound from './scenes/404';
@@ -25,10 +28,13 @@ ReactDOM.render((
     <PersistGate loading={(() => <div>Loading</div>)()} persistor={persistor}>
       <BrowserRouter>
         <div id="app">
-          {/* <BasketIcon /> */}
+          <BasketIcon />
           <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/market" component={Market} />
+                <Route path="/login" component={Login} />
+                <Route path="/signup" component={Signup} />
+                <Route path="/me" component={Profile} />
                 <Route path="/buy/:id" component={Buy} />
                 <Route path="/lifestyle" component={Lifestyle} />
                 <Route path="/blog/:id" component={Article} />

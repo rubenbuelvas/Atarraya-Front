@@ -40,16 +40,25 @@ h1, h2, h3 {
   vertical-align: baseline;
 }
 
-.huge.header {
-    color: #2C4663;
-    font-family: 'Bebas Neue';
-    font-size: 25em;
+.button {
+  cursor: pointer;
 }
 
-.big.header {
-  color: #FF6B3E;
-  font-family: 'Bebas Neue Light';
-  font-size: 6em;
+.submit.button {
+  background-color: white;
+  width: 5.5em !important;
+  color: #2C4663 !important;
+
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+
+  letter-spacing: 2px;
+  margin: auto !important;
+  border-radius: 3em !important;
+  font-family: 'Bebas Neue';
+  font-size: 3em;
+
+  text-align: center !important;
 }
 
 /* COLOR LIST

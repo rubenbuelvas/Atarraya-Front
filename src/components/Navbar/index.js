@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
                     <a href="/lifestyle" className="navbar item">Lifestyle</a>
                 </div>
                 <div className="three wide column">
-                    <a href="/" className="navbar item">Ingresa</a>
+                    <a href="/login" className="navbar item">Ingresa</a>
                 </div>
             </div>
         );

@@ -36,6 +36,16 @@ export const data = [
         image_url: '/images/pescado.png',
         tags: [0]
     },
+
+    {
+        id: 3,
+        name: "Filete de bocachico",
+        weight: "250g",
+        price: "12500",
+        available: 10,
+        image_url: '/images/pescado.png',
+        tags: [0]
+    },
 ]
 
 export const recipes = [

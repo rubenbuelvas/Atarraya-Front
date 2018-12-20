@@ -1,0 +1,67 @@
+#login {
+    background-color: #2C4663;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+#login > h1 {
+    font-size: 10vw;
+}
+
+#login-container {
+    width: 30vw;
+    margin: auto;
+}
+
+#login-container a {
+    color: white;
+    font-weight: bold;
+}
+
+#login-container .button:not(.submit) {
+    height: 5vh;
+    line-height: 5vh;
+    background-color: white;
+    color: black;
+    width: 20vw;
+    margin: auto;
+    border-radius: 5vh;
+    margin-bottom: 2vh;
+}
+
+#login-container > h3 {
+    font-size: 3vw;
+}
+
+#login-container .button img {
+    width: 1vw;
+}
+
+#login-container .ui.input > input {
+    border-radius: 0;
+    width:  20vw;
+}
+
+#login-container .six.wide.column {
+    display: table; 
+    height: 7vh;
+    text-align: right;
+    padding-right: 0;
+}
+
+#login-container .ten.wide.column {
+    text-align: left;
+}
+
+#login-container label {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Bebas Neue Light';
+    font-size: 1.5vw;
+}
+
+#login-container .form {
+    text-align: right;
+}

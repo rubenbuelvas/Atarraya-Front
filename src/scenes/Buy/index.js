@@ -16,6 +16,7 @@ export default class Buy extends React.Component {
     render() {
         const id = this.props.match.params.id.split("#")[0];
         const product = data[id];
+        console.log(id, product);
         
         return (
             <ReactFullpage
