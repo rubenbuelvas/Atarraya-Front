@@ -1,0 +1,27 @@
+#fifth img {
+  margin-left: 8vw;
+}
+
+#fifth .pin {
+  top: 20%;
+  left: 70%;
+  position: absolute;
+  width: 26vw;
+  height: 26vw;
+  border-radius: 13vw;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  background-color: #2C4663;
+  font-family: 'Bebas Neue Light';
+  padding: 5vw;
+}
+
+#fifth .pin .header {
+  margin-top: 10vw;
+  font-size: 10vw;
+}
+
+#fifth .pin p {
+  font-size: 4vw;
+}
