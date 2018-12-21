@@ -2,7 +2,6 @@
     /* background-color: #2C4663; */
     height: 60vh;
     width: 30vw;
-    color: white;
 }
 
 .product.banner .wrapper {
@@ -23,7 +22,6 @@
 
 .product.banner p {
     display: inline-block;
-    color: white;
     text-decoration: underline;
 }
 

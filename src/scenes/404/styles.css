@@ -1,0 +1,36 @@
+#p404 {
+    text-align: center;
+}
+
+#p404-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(70%);
+}
+
+#p404 .header {
+    font-family: 'Bebas Neue';
+    display: inline-block;
+    color: #2C4663;
+    font-size: 12vw;
+}
+
+#p404 .sub {
+    margin-top: 5vh;
+    font-family: 'Bebas Neue';
+    color: #2C4663;
+    font-size: 4vw;
+}
+
+#p404 .container {
+    text-align: right;
+    width: 38vw;
+    margin: auto;
+}
+
+#p404 span {
+    display: block;
+    margin-top: 3vh;
+    font-size: 2vw;
+    color: #888;
+}

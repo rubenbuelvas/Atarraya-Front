@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import { login } from 'services/session/actions';
+
 import EmailLogin from './components/EmailLogin';
 
 import './styles.css';
@@ -12,10 +14,28 @@ class Login extends React.Component {
         this.state = {
             option: 0
         }
+
+        this.emailLogin = this.emailLogin.bind(this);
+    }
+
+    emailLogin(email, password) {
+        // TODO: do auth
+        console.log(email, password);
+
+        this.props.dispatch(login({
+            id: 1,
+            name: 'Fulano de tal',
+            email
+        }));
     }
 
     render() {
         const { option } = this.state;
+
+        if(this.props.loggedIn) {
+            window.location.replace('/');
+            return '';
+        }
 
         let optionView = {};
         if(option === 0) {
@@ -40,7 +60,7 @@ class Login extends React.Component {
                 </div>;
         } else if(option === 3) {
             optionView =
-                <EmailLogin />;
+                <EmailLogin callback={this.emailLogin}/>;
         }
 
         return (
@@ -54,8 +74,7 @@ class Login extends React.Component {
 }
 
 export default connect((store) => {
-    console.log(store);
     return {
-        currentUser: store.currentUser
+        loggedIn: store.loggedIn
     };
 })(Login);

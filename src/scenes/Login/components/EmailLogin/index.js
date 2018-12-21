@@ -1,8 +1,26 @@
 import React from 'react';
 import { Input } from 'semantic-ui-react';
 
-export default class Login extends React.Component {
+export default class EmailLogin extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            email: '',
+            password: ''
+        }
+
+        this.handleInputChange = this.handleInputChange.bind(this);
+    }
+
+    handleInputChange(e) {
+        const { name, value } = e.target;
+        this.setState({ [name]: value });
+    }
+
     render() {
+        const { email, password } = this.state;
+
         return (
             <div id="login-container">     
                 <div className="form">
@@ -15,14 +33,13 @@ export default class Login extends React.Component {
                             <label>E-mail</label>
                         </div>
                         <div className="ten wide column">
-                            <Input placeholder='' name='name' />
+                            <Input name='email' type='email' value={email} onChange={this.handleInputChange}/>
                         </div>
-
                         <div className="six wide column">
                             <label>Contraseña</label>
                         </div>
                         <div className="ten wide column">
-                            <Input placeholder='' name='name' />
+                            <Input name='password' type='password' value={password} onChange={this.handleInputChange}/>
                         </div>
                     </div>
                     <br/>
@@ -30,7 +47,7 @@ export default class Login extends React.Component {
                              
                     <br/>
                     <br/>
-                    <div className="submit button">Ingresa</div>
+                    <div onClick={() => this.props.callback(email, password)} className="submit button">Ingresa</div>
                 </div>
 
                 <div className="ui divider"></div>

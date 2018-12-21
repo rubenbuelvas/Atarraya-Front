@@ -10,6 +10,7 @@ import Home from './scenes/Home';
 import Article from './scenes/Article';
 import Buy from './scenes/Buy';
 import Login from './scenes/Login';
+import Faq from './scenes/FAQ';
 import Signup from './scenes/Signup';
 import Profile from './scenes/Profile';
 import Lifestyle from './scenes/Lifestyle';
@@ -33,6 +34,7 @@ ReactDOM.render((
                 <Route exact path="/" component={Home} />
                 <Route path="/market" component={Market} />
                 <Route path="/login" component={Login} />
+                <Route path="/faq" component={Faq} />
                 <Route path="/signup" component={Signup} />
                 <Route path="/me" component={Profile} />
                 <Route path="/buy/:id" component={Buy} />

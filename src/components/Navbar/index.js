@@ -1,9 +1,19 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { logout } from 'services/session/actions';
 
 import './styles.css';
 
-export default class Navbar extends React.Component {
+class Navbar extends React.Component {
+    logout(e) {
+        e.preventDefault();
+        this.props.dispatch(logout());
+        window.location.replace('/');
+    }
+
     render() {
+        const { loggedIn, currentUser } = this.props;
         return (
             <div id="navbar" className="ui grid">
                 <div className="three wide column">
@@ -19,9 +29,22 @@ export default class Navbar extends React.Component {
                     <a href="/lifestyle" className="navbar item">Lifestyle</a>
                 </div>
                 <div className="three wide column">
-                    <a href="/login" className="navbar item">Ingresa</a>
+                    {
+                        loggedIn ?
+                        <a onClick={e => this.logout(e)} href="/" className="navbar item">{currentUser.name}</a>
+                        :
+                        <a href="/login" className="navbar item">Ingresa</a>
+                    }
+                    
                 </div>
             </div>
         );
     }
 }
+
+export default connect((store) => {
+    return {
+        loggedIn: store.loggedIn,
+        currentUser: store.currentUser
+    };  
+})(Navbar);

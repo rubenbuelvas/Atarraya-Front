@@ -1,12 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { Form, Input } from 'semantic-ui-react'
+import { Input } from 'semantic-ui-react'
 
 import './styles.css';
 
 class Signup extends React.Component {
     render() {
+        if(this.props.loggedIn) {
+            window.location.replace('/');
+            return '';
+        }
+
         return (
             <div id="signup">
                 <h1>#BIENVENIDO</h1>
@@ -80,6 +85,6 @@ class Signup extends React.Component {
 export default connect((store) => {
     console.log(store);
     return {
-        currentUser: store.currentUser
+        loggedIn: store.loggedIn
     };
 })(Signup);

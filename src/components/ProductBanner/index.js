@@ -33,11 +33,11 @@ export default class ProductBanner extends React.Component {
 
     render() {
         const { i } = this.state
-        const { products } = this.props;
+        const { products, dark } = this.props;
         const product = products[i];
 
         return (
-            <div className="product banner" style={this.props.style}>
+            <div className="product banner" style={{...this.props.style, color: dark ? 'white' : '#2C4663'}}>
                 <div className="wrapper">
                     <img src={product.image_url} alt=""/>
                 </div>
