@@ -1,0 +1,12 @@
+#sidebar {
+    background-color: #2C4663;
+}
+
+#sidebar .item {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+}

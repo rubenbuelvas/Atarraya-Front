@@ -1,8 +1,8 @@
-#fifth img {
+#lifestyle5 img {
   margin-left: 8vw;
 }
 
-#fifth .pin {
+#lifestyle5 .pin {
   top: 20%;
   left: 70%;
   position: absolute;
@@ -17,11 +17,11 @@
   padding: 5vw;
 }
 
-#fifth .pin .header {
+#lifestyle5 .pin .header {
   margin-top: 10vw;
   font-size: 10vw;
 }
 
-#fifth .pin p {
+#lifestyle5 .pin p {
   font-size: 4vw;
 }

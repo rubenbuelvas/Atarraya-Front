@@ -7,6 +7,7 @@ export default class RecipeThumbnail extends React.Component {
         return (
             <a className="recipe thumbnail" href="/recipes/1">
                 <div style={{backgroundImage: 'url("/stock/tocino.jpg")'}}>
+                    <span>Receta #1</span>
                 </div>
             </a>
         );

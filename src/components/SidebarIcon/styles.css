@@ -1,0 +1,18 @@
+#sidebar-icon-container {
+  width: 7em;
+  z-index: 1;
+  position: absolute;
+  left: 3vw;
+  margin-top: 11.5vh;
+}
+  
+#sidebar-icon {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #2C4663;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}

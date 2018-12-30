@@ -18,19 +18,42 @@ import Recipe from './scenes/Recipe';
 import NotFound from './scenes/404';
 
 import BasketIcon from './components/BasketIcon';
+import SidebarIcon from './components/SidebarIcon';
+import LocalSidebar from './components/LocalSidebar';
 
 import { Switch, BrowserRouter, Route, Redirect } from 'react-router-dom';
+
+import { Sidebar } from 'semantic-ui-react';
 
 import 'semantic-ui-css/semantic.min.css';
 import './index.css';
 
-ReactDOM.render((
-  <Provider store={store}>
-    <PersistGate loading={(() => <div>Loading</div>)()} persistor={persistor}>
-      <BrowserRouter>
-        <div id="app">
-          <BasketIcon />
-          <Switch>
+class SidebarWrapper extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      visible: false
+    }
+
+    this.toggleVisible = this.toggleVisible.bind(this);
+  }
+
+  toggleVisible = () => this.setState(prevState => ({ visible: true }))
+
+  render() {
+    const { visible } = this.state;
+    return (
+      <div id="wrapper">
+        <SidebarIcon onClick={this.toggleVisible} visible={this.state.visible} />
+        <BasketIcon />
+
+        <Sidebar.Pushable>
+          <LocalSidebar visible={visible} onHide={() => this.setState({ visible: false })} />
+
+          <Sidebar.Pusher dimmed={visible}>
+            <div id="app" style={{position: 'relative', zIndex: '-1'}}>
+              <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/market" component={Market} />
                 <Route path="/login" component={Login} />
@@ -43,8 +66,20 @@ ReactDOM.render((
                 <Route path="/recipes/:id" component={Recipe} />
                 <Route exact path="/404" component={NotFound} />
                 <Redirect to="/404" />
-            </Switch>
-        </div>
+              </Switch>
+            </div>            
+          </Sidebar.Pusher>
+        </Sidebar.Pushable>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render((
+  <Provider store={store}>
+    <PersistGate loading={(() => <div>Loading</div>)()} persistor={persistor}>
+      <BrowserRouter>
+        <SidebarWrapper />
       </BrowserRouter>
     </PersistGate>
   </Provider>

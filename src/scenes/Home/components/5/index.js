@@ -6,6 +6,8 @@ import './styles.css';
 
 export default class Third extends React.Component {
     render() {
+        const width = 16;
+
         return (
             <div id="fifth" className="section">
                 <h1 className="header">#MARISCOS</h1>
@@ -16,10 +18,10 @@ export default class Third extends React.Component {
                     </div>
 
                     <div className="four wide column">
-                        <ProductPin product={data[0]} style={{backgroundColor: '#2C4663', color: 'white'}}/>
+                        <ProductPin dark width={width} color="#2C4663" product={data[0]}/>
                     </div>
                     <div className="four wide column">
-                        <ProductPin product={data[0]} style={{backgroundColor: '#2C4663', color: 'white'}}/>
+                        <ProductPin product={data[0]} />
                     </div>
                     <div className="four wide column">
                         <ProductPin product={data[0]} style={{backgroundColor: '#2C4663', color: 'white'}}/>
