@@ -3,7 +3,7 @@ import Footer from 'components/Footer';
 
 import './styles.css';
 
-export default class Third extends React.Component {
+export default class FullFooter extends React.Component {
     render() {
         return (
             <div id="full-footer">
