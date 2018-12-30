@@ -13,8 +13,8 @@ export default class ProductPin extends React.Component {
                     borderRadius: `${width/2}vw`,
                     backgroundColor: color,
                     color: dark ? 'white' : '#2C4663',
-                    ...this.props.style}
-                } onClick={() => window.location.replace(`/buy/${product.id}`)}>
+                    ...this.props.style
+                }} onClick={() => window.location.replace(`/buy/${product.id}`)}>
                 <img src={product.image_url} alt={product.name + "image"}/>
 
                 <p>

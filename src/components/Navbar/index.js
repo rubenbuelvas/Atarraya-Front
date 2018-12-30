@@ -13,7 +13,7 @@ class Navbar extends React.Component {
     }
 
     render() {
-        const { loggedIn, currentUser } = this.props;
+        const { loggedIn } = this.props;
         return (
             <div id="navbar" className="ui grid">
                 <div className="three wide column">
@@ -31,7 +31,7 @@ class Navbar extends React.Component {
                 <div className="three wide column">
                     {
                         loggedIn ?
-                        <a onClick={e => this.logout(e)} href="/" className="navbar item">{currentUser.name}</a>
+                        <a onClick={e => this.logout(e)} href="/" className="navbar item">Perfil|</a>
                         :
                         <a href="/login" className="navbar item">Ingresa</a>
                     }
@@ -44,7 +44,6 @@ class Navbar extends React.Component {
 
 export default connect((store) => {
     return {
-        loggedIn: store.loggedIn,
-        currentUser: store.currentUser
+        loggedIn: store.loggedIn
     };  
 })(Navbar);
