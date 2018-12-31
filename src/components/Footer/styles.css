@@ -1,7 +1,5 @@
 .footer.wrapper {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
+    position: relative;
 }
 
 #footer {
@@ -9,7 +7,8 @@
     background-color: #2C4663;
     height: 30vh;
     width: 85vw;
-    left: -50%;
+    margin: auto;
+    margin-top: -11vh;
 }
 
 #footer > .ui.grid {

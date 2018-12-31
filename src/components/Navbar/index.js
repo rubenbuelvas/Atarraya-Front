@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
 import { logout } from 'services/session/actions';
 
 import './styles.css';
@@ -13,29 +12,29 @@ class Navbar extends React.Component {
     }
 
     render() {
-        const { loggedIn } = this.props;
+        const { dark, loggedIn } = this.props;
+        const color = dark ? "white" : "#2C4663";
+
+        const NavbarItem = props => (
+            <a href={props.href} style={{color: props.color}} className="navbar item">{props.text}</a>
+        );
+
         return (
             <div id="navbar" className="ui grid">
                 <div className="three wide column">
-                    <a href="/" className="navbar item">Home</a>
+                    <NavbarItem href="/" text="Home" color={color} />
                 </div>
                 <div className="three wide column">
-                    <a href="/market" className="navbar item">Market</a>
+                    <NavbarItem href="/market" text="Market" color={color} />
                 </div>
                 <div className="four wide column">
                     <img src="/images/logo-blue-medium.png" alt=""/>
                 </div>
                 <div className="three wide column">
-                    <a href="/lifestyle" className="navbar item">Lifestyle</a>
+                    <NavbarItem href="/lifestyle" text="Lifestyle" color={color} />
                 </div>
                 <div className="three wide column">
-                    {
-                        loggedIn ?
-                        <a onClick={e => this.logout(e)} href="/" className="navbar item">Perfil|</a>
-                        :
-                        <a href="/login" className="navbar item">Ingresa</a>
-                    }
-                    
+                    <NavbarItem href={`/${loggedIn ? "me" : "login"}`} text={loggedIn ? "Perfil" : "Ingresa"} color={color} />
                 </div>
             </div>
         );

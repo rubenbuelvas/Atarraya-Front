@@ -52,7 +52,7 @@ class SidebarWrapper extends React.Component {
           <LocalSidebar visible={visible} onHide={() => this.setState({ visible: false })} />
 
           <Sidebar.Pusher dimmed={visible}>
-            <div id="app" style={{position: 'relative', zIndex: '-1'}}>
+            <div id="app">
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/market" component={Market} />
