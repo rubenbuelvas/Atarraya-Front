@@ -21,7 +21,7 @@ class LocalSidebar extends React.Component {
                 <a href="/" className="item">Home</a>
                 <a href="/market" className="item">Market</a>
                 <a href="/lifestyle" className="item">Lifestyle</a>
-                <a href="/login" className="item">{loggedIn ? "Perfil" : "Ingresar"}</a>
+                <a href={`/${loggedIn ? "me" : "login"}`} className="item">{loggedIn ? "Perfil" : "Ingresar"}</a>
                 <a href="/faq" className="item">FAQ</a>
             </Sidebar>
         );

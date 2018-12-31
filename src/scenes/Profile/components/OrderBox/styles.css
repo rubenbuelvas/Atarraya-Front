@@ -1,0 +1,76 @@
+.order-box {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.order-box a {
+    font-family: 'Bebas Neue';
+    text-decoration: underline;
+    font-size: 1.5vw;
+}
+
+.order-container {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    border: 4px solid #2C4663;
+}
+
+.order-container .date {
+    font-family: 'Bebas Neue';
+    font-size: 2vw;
+}
+
+.order-container > span {
+    display: inline-block;
+    min-height: 2vw;
+}
+
+.order-container > span > span {
+    font-family: 'Bebas Neue';
+    font-size: 1.2vw;
+}
+
+.order-container .ui.grid {
+    margin-top: 3vw;
+}
+
+.order-container h2 {
+    font-size: 3vw;
+    letter-spacing: 5px;
+}
+
+.order-container .column {
+    text-align: center;
+
+}
+
+.order-container .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.order-container img {
+    width: 50%;    
+}
+
+.order-container .description {
+    font-family: 'Bebas Neue';
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    min-height: 1.8vw;
+}
+
+.order-container .amount {
+    min-height: 2vw;
+}
+
+.order-container .price {
+    font-family: 'Bebas Neue';
+    font-size: 2vw;
+    letter-spacing: 3px;
+}

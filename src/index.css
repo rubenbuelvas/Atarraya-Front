@@ -36,6 +36,10 @@ h1, h2, h3 {
   font-family: 'Bebas Neue Light';
 }
 
+a {
+  color: #2C4663;
+}
+
 .fp-tableCell {
   vertical-align: baseline;
 }
@@ -59,6 +63,10 @@ h1, h2, h3 {
   font-size: 3em;
 
   text-align: center !important;
+}
+
+.navbar-scene {
+  padding-top: 6vh;
 }
 
 /* COLOR LIST

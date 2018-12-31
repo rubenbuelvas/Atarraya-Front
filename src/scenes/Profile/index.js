@@ -2,60 +2,50 @@ import React from 'react';
 
 import Navbar from 'components/Navbar';
 import FullFooter from 'components/FullFooter';
+import OrderBox from './components/OrderBox';
 
-export default class Checkout extends React.Component {
+import BackgroundImage from './images/backgroundProfile.jpg';
+
+import './styles.css';
+
+export default class profile extends React.Component {
     render() {
         return (
-            <div id="checkout">
-                <Navbar />
+            <div id="profile" style={{backgroundImage: `url(${BackgroundImage})`}} className="navbar-scene">
+                <Navbar dark />
 
-                <div id="checkout-info">
+                <div id="profile-container">
                     <h1>#PERFIL</h1>
                     <h4>Información de tu cuenta</h4>
-                
-                    <h4>Tus pedidos</h4>
+                        <div id="profile-info" className="ui grid">
+                            <div className="six wide column"></div>
+                            <div className="ten wide column">
+                                <div className="ui grid">
+                                    <div className="six wide column">sexo:</div>
+                                    <div className="ten wide column">femenino</div>
 
-                    <div id="checkout-container">
-                        <div className="date">27/12/2018</div>
-                        <div className="time">15:48</div>
-                        <p><span>Dirección de envío:</span> Calle 152#40-14</p>
-                        <p><span>Método de pago:</span> Pago contra entrega</p>
+                                    <div className="six wide column">fecha de nacimiento:</div>
+                                    <div className="ten wide column">01/10/91</div>
 
-                        <div className="ui grid">
-                            <div className="column"></div>
-                            <div className="column header">Producto</div>
-                            <div className="column header">Total</div>
-                            <div className="column">
-                                <img src="/images/pescado.png" alt="Mixtura Atarraya"/>
-                            </div>
-                            <div className="column">
-                                Mixtura Atarraya
-                            </div>
-                            <div className="column">
-                                $7350
-                            </div>
-                            <div className="column">
-                                <img src="/images/pescado.png" alt="Filete de tilapia"/>
-                            </div>
-                            <div className="column">
-                                Filete de tilapia
-                            </div>
-                            <div className="column">
-                                $15750
+                                    <div className="six wide column">email:</div>
+                                    <div className="ten wide column">fulanadetal@gmail.com</div>
+
+                                    <div className="six wide column">celular:</div>
+                                    <div className="ten wide column">3219856658</div>
+
+                                    <div className="six wide column">dirección:</div>
+                                    <div className="ten wide column">Calle 152 # 40-14</div>
+                                </div>
                             </div>
                         </div>
-
-                        <div className="ui divider"></div>
-
-                        <div className="total">
-                            $23100
-                            <span>Domicilio</span>$2000
-                            <div className="full-price">$25100</div>
-                        </div>
-                    </div>
+                    <br/>
+                    <h4 style={{ marginLeft: '5vw' }}>Tus pedidos</h4>
+                    <OrderBox />
                 </div>
                 
-                <FullFooter />
+                <div className="footer wrapper">
+                    <FullFooter />                
+                </div>
             </div>
         );
     }
