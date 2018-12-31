@@ -12,7 +12,7 @@
     position: absolute;
     width: 35vw;
     height: auto;
-    top: -10vh;
+    bottom: 50vh !important;
     right: 10vw;
 }
 
@@ -22,7 +22,7 @@
     height: 16vw;
     text-align: center;
     line-height: 17vw;
-    top: 20vh;
+    bottom: 50vh;
     left: 35vw;
     border-radius: 8vw;
     background: #2C4663;

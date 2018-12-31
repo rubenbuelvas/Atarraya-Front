@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from 'components/Navbar';
 import FullFooter from 'components/FullFooter';
+import Footer from 'components/Footer';
 
 
 import './styles.css';
@@ -35,8 +36,24 @@ export default class Article extends React.Component {
     través de redes y la publicaremos en nuestra página web. </p>    
                     </div>
                     
+                    
                 </div>
                 
+                <img src="stock/tocino.jpg" alt=""/>
+                <div className="ui two column grid">
+                        <div className="column">
+                            <img src="stock/tocino.jpg" alt=""/>
+                            <img src="stock/tocino.jpg" alt=""/>
+                        
+                        </div>
+                        <div className="column">
+                            <img src="stock/tocino.jpg" alt=""/>
+                            <img src="stock/tocino.jpg" alt=""/>
+                        
+                        </div>
+
+                    </div>
+                <FullFooter />    
             </div>
         );
     }
