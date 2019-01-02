@@ -16,6 +16,7 @@ import Profile from './scenes/Profile';
 import Lifestyle from './scenes/Lifestyle';
 import Recipe from './scenes/Recipe';
 import NotFound from './scenes/404';
+import Checkout from './scenes/Checkout';
 
 import BasketIcon from './components/BasketIcon';
 import SidebarIcon from './components/SidebarIcon';
@@ -39,13 +40,13 @@ class SidebarWrapper extends React.Component {
     this.toggleVisible = this.toggleVisible.bind(this);
   }
 
-  toggleVisible = () => this.setState(prevState => ({ visible: true }))
+  toggleVisible = () => this.setState({ visible: true })
 
   render() {
     const { visible } = this.state;
     return (
       <div id="wrapper">
-        <SidebarIcon onClick={this.toggleVisible} visible={this.state.visible} />
+        <SidebarIcon onClick={this.toggleVisible} visible={visible} />
         <BasketIcon />
 
         <Sidebar.Pushable>
@@ -56,6 +57,7 @@ class SidebarWrapper extends React.Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/market" component={Market} />
+                <Route path="/checkout" component={Checkout} />
                 <Route path="/login" component={Login} />
                 <Route path="/faq" component={Faq} />
                 <Route path="/signup" component={Signup} />

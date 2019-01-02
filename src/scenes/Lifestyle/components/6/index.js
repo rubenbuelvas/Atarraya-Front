@@ -10,7 +10,7 @@ export default class Sixth extends React.Component {
         return (
             <div id="lifestyle6" className="section">
                 <h1 className="header">#DESCUBRE</h1>
-                <ArticleGrid type="recipe" articles={articles}/>
+                <ArticleGrid type="blog" articles={articles}/>
             </div>
         );
     }

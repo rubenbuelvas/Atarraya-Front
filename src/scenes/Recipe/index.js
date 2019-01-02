@@ -11,7 +11,7 @@ import './styles.css';
 export default class Recipe extends React.Component {
     render() {
         return (
-            <div id="recipe" className="navbar-scene">
+            <div id="recipe">
                 <Navbar />
 
                 <h1>#RECETAS</h1>

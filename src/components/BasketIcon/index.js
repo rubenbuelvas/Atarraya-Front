@@ -6,10 +6,14 @@ import './styles.css';
 class BasketIcon extends React.Component {
     render() {
         return (
-            <a href="/me">
-                <div className="basket container">
-                    <img id="basket" src="/images/basket.png" alt=""/>
-                    <div className="ui blue circular label">{this.props.products}</div>
+            <a href="/checkout">
+                <div className="cart container">
+                    <img id="cart" src="/images/cart.png" alt=""/>
+                    {
+                        this.props.products ?
+                        <div className="ui circular label">{this.props.products}</div>
+                        : ''
+                    }
                 </div>
             </a>
         );
@@ -17,8 +21,7 @@ class BasketIcon extends React.Component {
 }
 
 export default connect((store) => {
-    console.log(store);
     return {
-        products: store.basket.length
+        products: store.cart.length
     };
 })(BasketIcon);

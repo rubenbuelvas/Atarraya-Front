@@ -6,7 +6,7 @@ export default class Presentation extends React.Component {
 
     render() {
         return (
-            <div className="section navbar-scene">
+            <div className="section">
                 <Navbar />
                 <AddressInput />
             </div>

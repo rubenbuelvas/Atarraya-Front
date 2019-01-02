@@ -11,7 +11,7 @@ import './styles.css';
 export default class profile extends React.Component {
     render() {
         return (
-            <div id="profile" style={{backgroundImage: `url(${BackgroundImage})`}} className="navbar-scene">
+            <div id="profile" style={{backgroundImage: `url(${BackgroundImage})`}}>
                 <Navbar dark />
 
                 <div id="profile-container">

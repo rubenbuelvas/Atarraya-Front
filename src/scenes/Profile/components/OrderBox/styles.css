@@ -44,14 +44,6 @@
 
 .order-container .column {
     text-align: center;
-
-}
-
-.order-container .centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 
 .order-container img {

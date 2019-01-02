@@ -6,7 +6,7 @@ import './styles.css';
 export default class Presentation extends React.Component {
     render() {
         return (
-            <div id="lifestyleFirst" className="section navbar-scene">
+            <div id="lifestyleFirst" className="section">
                 <Navbar />
                 <img src="/images/lifestyle-familia.png" alt="Lifestyle Familia"/>
                 <div className="banner-wrapper">

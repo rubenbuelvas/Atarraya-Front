@@ -7,7 +7,7 @@ import './styles.css';
 export default class FAQ extends React.Component {
     render() {
         return (
-            <div id="faq" className="navbar-scene">
+            <div id="faq">
                 <Navbar />
 
                 <h1>Preguntas frecuentes</h1>
