@@ -1,0 +1,24 @@
+.np-wrapper {
+    margin-top: 1vw;
+    margin-right: 2vw;
+    font-family: 'Bebas Neue';
+    text-align: right;
+}
+
+.np-wrapper span {
+    display: block;
+    font-size: 2.2vw;
+    letter-spacing: 3px;
+    margin-bottom: 0.5em;
+}
+
+.np-wrapper .net {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: inline-block;
+    background-color: #2C4663;
+    color: white;
+    height: 2.5vw;
+    line-height: 2.8vw;
+    border-radius: 2.5vw;
+}

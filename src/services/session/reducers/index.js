@@ -1,4 +1,4 @@
-import { LOGIN, LOGOUT, ADD_TO_CART } from '../constants/action-types.js';
+import { LOGIN, LOGOUT, ADD_TO_CART, EMPTY_CART } from '../constants/action-types.js';
 
 const rootReducer = (state = {currentUser: {}, loggedIn: false, cart: []}, action) => {
   switch(action.type) {
@@ -18,9 +18,14 @@ const rootReducer = (state = {currentUser: {}, loggedIn: false, cart: []}, actio
       return Object.assign({}, state, {
         cart: [
           ...state.cart,
-          action.payload.product
+          { product: action.payload.product, amount: action.payload.amount }
         ]
       })
+    
+    case EMPTY_CART:
+      return Object.assign({}, state, {
+        cart: []
+      })      
 
     default:
       return state;

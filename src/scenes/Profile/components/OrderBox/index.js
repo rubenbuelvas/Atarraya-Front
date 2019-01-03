@@ -4,8 +4,9 @@ import './styles.css';
 
 export default class OrderBox extends React.Component {
     render() {
+        const { style } = this.props;
         return(
-            <div className="order-box">
+            <div className="order-box" style={{...style}}>
                 <div className="order-container">   
                     <div className="date">27/12/2018</div>
                     <br/>
@@ -48,8 +49,7 @@ export default class OrderBox extends React.Component {
                     <div className="ui divider"></div>
 
                     <div className="ui three column grid">
-
-                    <div className="column"></div>
+                        <div className="column"></div>
                         <div className="column"></div>
                         <div className="column">
                             <div className="total">

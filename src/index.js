@@ -7,6 +7,7 @@ import { persistor, store } from './store';
 
 import Market from './scenes/Market';
 import Home from './scenes/Home';
+import Cart from './scenes/Cart';
 import Article from './scenes/Article';
 import Buy from './scenes/Buy';
 import Login from './scenes/Login';
@@ -57,6 +58,7 @@ class SidebarWrapper extends React.Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/market" component={Market} />
+                <Route path="/cart" component={Cart} />
                 <Route path="/checkout" component={Checkout} />
                 <Route path="/login" component={Login} />
                 <Route path="/faq" component={Faq} />

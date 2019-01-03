@@ -6,7 +6,7 @@ import './styles.css';
 class BasketIcon extends React.Component {
     render() {
         return (
-            <a href="/checkout">
+            <a href="/cart">
                 <div className="cart container">
                     <img id="cart" src="/images/cart.png" alt=""/>
                     {

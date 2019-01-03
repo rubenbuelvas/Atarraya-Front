@@ -1,0 +1,40 @@
+.purchase-grid .ui.grid:not(.next) {
+    margin-bottom: 2vw;
+}
+
+.purchase-grid .next.ui.grid {
+    margin-top: 1vw;
+}
+
+.purchase-grid h2 {
+    font-size: 3vw;
+    letter-spacing: 5px;
+}
+
+.purchase-grid .column {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.purchase-grid img {
+    width: 50%;
+}
+
+.purchase-grid .description {
+    font-family: 'Bebas Neue';
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    min-height: 1.8vw;
+}
+
+.purchase-grid .amount {
+    min-height: 2vw;
+}
+
+.purchase-grid .price {
+    font-family: 'Bebas Neue';
+    font-size: 2vw;
+    letter-spacing: 3px;
+}

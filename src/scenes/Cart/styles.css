@@ -1,0 +1,35 @@
+#cart {
+    color: #2C4663;
+}
+
+#cart h1 {
+    height: 12vw;
+
+    margin-top: 8vw;
+    margin-left: 35vw;
+    font-size: 14vw;
+    -webkit-text-stroke: 1px white;
+}
+
+#cart .pg-wrapper {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 5vh;
+
+    padding: 2vw;
+
+    background-color: white;
+}
+
+#cart .ibc .huge.button {
+    background-color: white;
+    color: #2C4663;
+}
+
+#cart .ibc a {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 2vw;
+    letter-spacing: 3px;
+    text-decoration: underline;
+}

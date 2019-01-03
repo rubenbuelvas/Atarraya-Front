@@ -20,24 +20,6 @@
     text-align: center;
 }
 
-.big.button {
-    border-radius: 10vh;
-
-    padding-left: 2vw;
-    padding-right: 2vw;
-
-    height: 10vh;
-    line-height: 10vh;
-    display: inline-block;
-
-    background-color: #2C4663;
-
-    font-family: 'Bebas Neue';
-    font-size: 3vw;
-    color: white;
-    letter-spacing: 5px;
-}
-
 #checkout {
     color: #2C4663;
 }
@@ -110,6 +92,7 @@
 }
 
 #checkout-summary .amount {
+    font-size: 1.2vw;
     min-height: 2vw;
 }
 
@@ -119,7 +102,7 @@
     letter-spacing: 3px;
 }
 
-#checkout-summary .final {
+#checkout-summary .total {
     margin-top: 2vw;
     margin-right: 3vw;
 
@@ -134,7 +117,7 @@
     margin-bottom: 0.5em;
 }
 
-#checkout-summary .total {
+#checkout-summary .full-price {
     padding-left: 1vw;
     padding-right: 1vw;
     display: inline-block;
@@ -147,9 +130,4 @@
 
 #checkout-container .ui.dropdown {
     width: 20vw;
-    border: 1px solid #2C4663;
-    border-radius: 0 !important;
-    color: #2C4663 !important;
-
-    font-size: 1vw;
 }

@@ -1,4 +1,4 @@
-import { LOGIN, LOGOUT, ADD_TO_CART } from '../constants/action-types.js';
+import { LOGIN, LOGOUT, ADD_TO_CART, EMPTY_CART } from '../constants/action-types.js';
 
 export function login(user) {
     console.log("login");
@@ -25,5 +25,11 @@ export function addToCart(product, amount) {
             product: product,
             amount: amount
         }
+    }
+}
+
+export function emptyCart() {
+    return {
+        type: EMPTY_CART
     }
 }

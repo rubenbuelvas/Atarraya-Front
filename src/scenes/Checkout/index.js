@@ -4,6 +4,7 @@ import { Checkbox, Dropdown } from 'semantic-ui-react'
 
 import Navbar from 'components/Navbar';
 import FullFooter from 'components/FullFooter';
+import PurchaseColumn from 'components/PurchaseColumn';
 
 import BackgroundImage from './images/checkout.jpg';
 
@@ -57,6 +58,7 @@ class Checkout extends React.Component {
     render() {
         const { method } = this.state;
         const { cart } = this.props;
+        console.log(cart);
 
         return (
             <div id="checkout" style={{ backgroundImage: `url(${BackgroundImage})` }}>
@@ -107,7 +109,7 @@ class Checkout extends React.Component {
                                             view.push(
                                                 <div key={id} className="ten wide column">
                                                     <div style={{ marginTop: '2vw'}}>
-                                                        <div className="description">Filete de tilapia</div>
+                                                        <div className="description">{product.name}</div>
                                                         <div className="amount">3 unidades</div>
                                                         <div className="price">$5250</div>
                                                     </div>
@@ -117,10 +119,10 @@ class Checkout extends React.Component {
                                     })()}
                                 </div>
                                 <div style={{ marginTop: '2vw' }} className="ui divider"></div>
-                                <div className="final">
+                                <div className="total">
                                     <span>$23.100</span>
                                     <span>Domicilio $2.000</span>
-                                    <span className="total">$25.100</span>
+                                    <span className="full-price">$25.100</span>
                                 </div>
                             </div>
                         </div>
