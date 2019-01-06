@@ -4,7 +4,7 @@ import { Checkbox, Dropdown } from 'semantic-ui-react'
 
 import Navbar from 'components/Navbar';
 import FullFooter from 'components/FullFooter';
-import PurchaseColumn from 'components/PurchaseColumn';
+//import PurchaseColumn from 'components/PurchaseColumn';
 
 import BackgroundImage from './images/checkout.jpg';
 
