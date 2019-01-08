@@ -37,6 +37,7 @@ export default class ProductBanner extends React.Component {
         const product = products[i];
 
         return (
+            <a href={`/buy/${product.id}`}>
             <div className="product banner" style={{...this.props.style, color: dark ? 'white' : '#2C4663'}}>
                 <div className="wrapper">
                     <img src={product.image_url} alt=""/>
@@ -50,6 +51,7 @@ export default class ProductBanner extends React.Component {
                     <i className="angle right icon" onClick={this.moveRight}></i>
                 </div>
             </div>
+            </a>
         );
     }
 }

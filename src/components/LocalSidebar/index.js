@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { connect } from 'react-redux';
+import { logout } from 'services/session/actions';
 
 import { Sidebar, Menu } from 'semantic-ui-react';
 
@@ -23,6 +24,7 @@ class LocalSidebar extends React.Component {
                 <a href="/lifestyle" className="item">Lifestyle</a>
                 <a href={`/${loggedIn ? "me" : "login"}`} className="item">{loggedIn ? "Perfil" : "Ingresar"}</a>
                 <a href="/faq" className="item">FAQ</a>
+                <a href="/" className="item" onClick={() => this.props.dispatch(logout())}>cerrar sesión</a>
             </Sidebar>
         );
     }

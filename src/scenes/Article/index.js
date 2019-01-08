@@ -2,7 +2,6 @@ import React from 'react';
 
 import Navbar from 'components/Navbar';
 import FullFooter from 'components/FullFooter';
-import Footer from 'components/Footer';
 
 
 import './styles.css';

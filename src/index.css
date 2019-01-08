@@ -108,6 +108,28 @@ a {
   font-size: 1vw;
 }
 
+.active.outline.button {
+  background-color: #2C4663;
+  color: white;
+}
+
+.outline.button {
+  margin-bottom: 1vw;
+  
+  padding-top: 0.5vw;
+  padding-bottom: 0.5em;
+
+  width: 15vw;
+  display: inline-block;
+
+  border: 1px solid #2C4663;
+  background-color: white;
+  color: #2C4663;
+
+  font-size: 1vw;
+  text-align: center;
+}
+
 /* COLOR LIST
   - blue: #2C4663
   - orange: #FF6B3E

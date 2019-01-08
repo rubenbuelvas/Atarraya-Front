@@ -36,15 +36,26 @@
 }
 
 .buy-info .button {
+    height: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     background: white;
     color: #2C4663;
     text-align: center;
     line-height: 3vw;
     font-family: 'Bebas Neue';
     font-size: 2vw;
-    width: 8vw;
+    margin-left: 20px;
+}
+
+.info-wrapper {
+    display: flex !important;
+    align-items: center;
+}
+
+.buy-info .ui.input input {
+    border-radius: 0px;
     height: 3vw;
-    display: inline-block
 }
 
 .buy-info .ui.dropdown {
