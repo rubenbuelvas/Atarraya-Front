@@ -3,10 +3,12 @@ import { connect } from 'react-redux';
 import { Checkbox, Dropdown } from 'semantic-ui-react'
 
 import Navbar from 'components/Navbar';
+import PurchaseGrid from 'components/PurchaseGrid';
 import FullFooter from 'components/FullFooter';
-//import PurchaseColumn from 'components/PurchaseColumn';
 
 import BackgroundImage from './images/checkout.jpg';
+
+import { emptyCart } from 'services/session/actions';
 
 import { ENTREGA, PSE } from 'api/constants';
 
@@ -96,7 +98,7 @@ class Checkout extends React.Component {
                         <div className="column">
                             <div id="checkout-summary">
                                 <h3>Resumen</h3>
-                                <div className="ui grid">
+                                {/* <div className="ui grid">
                                     {(() => {
                                         return cart.map(product => {
                                             const view = [];
@@ -123,7 +125,8 @@ class Checkout extends React.Component {
                                     <span>$23.100</span>
                                     <span>Domicilio $2.000</span>
                                     <span className="full-price">$25.100</span>
-                                </div>
+                                </div> */}
+                                <PurchaseGrid purchases={cart} compact/>
                             </div>
                         </div>
                     </div>
@@ -132,6 +135,8 @@ class Checkout extends React.Component {
                         <Checkbox label='Acepto políticas de privacidad y manejo de datos.'
                             onChange={() => this.setState(prevState => ({ termsChecked: !prevState.termsChecked }))} />
                     </div>
+
+                    <div onClick={() => this.props.dispatch(emptyCart())}>lalala</div>
 
                     <div className="ibc">
                         <div className="big button" onClick={this.buy}>Comprar</div>

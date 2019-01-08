@@ -3,28 +3,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addToCart } from 'services/session/actions';
 import { tags } from 'api';
-
-import { Dropdown } from 'semantic-ui-react';
+import { formatPrice } from 'ui';
 import Tag from './components/Tag';
 
 import './styles.css';
-
-const weightOptions = [
-    {
-        text: '250g',
-        value: '250g',
-    },
-
-    {
-        text: '500g',
-        value: '500g',
-    },
-
-    {
-        text: '1kg',
-        value: '1kg',
-    },
-];
 
 class BuyFirst extends React.Component {
     constructor() {
@@ -35,15 +17,6 @@ class BuyFirst extends React.Component {
     
     add() {
         this.props.dispatch(addToCart(this.props.product, 1));  // TODO: amount
-    }
-
-    formatPrice(price) {
-        let str = price.toString();
-        if(str.length > 3) {
-            let sub1 = str.substr(0, str.length - 3);
-            let sub2 = str.substr(str.length - 3, str.length);
-            return sub1 + "." + sub2;
-        } else return str;
     }
 
     render() {
@@ -75,12 +48,13 @@ class BuyFirst extends React.Component {
                     <br/>
                     <br/>
                     
-                    <div className="price">$ {this.formatPrice(product.price)} PESOS</div>
+                    <div className="price">{formatPrice(product.price)} PESOS</div>
 
-                    <div>
-                    <Dropdown compact placeholder='Selecciona un precio...' selection options={weightOptions} />
-                    <span onClick={this.add} className="button">Comprar</span>
-
+                    <div className="info-wrapper">
+                        <div className="ui input">
+                            <input type="number" min="250" step="50"/>
+                        </div>
+                        <span onClick={this.add} className="button">Comprar</span>
                     </div>
                 </div>
             </div>
