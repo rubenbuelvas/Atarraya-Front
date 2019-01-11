@@ -1,15 +1,15 @@
 #market4 > .fp-tableCell > .header {
     color: #2C4663;
-    font-size: 13vw;
-    letter-spacing: 12px;
+    font-size: 12.93vw;
     text-align: center;
     margin-top: 50vh;
     font-family: 'Bebas Neue Light';
 }
 
-#domiciliario {
+#market4 #domiciliario {
     position: absolute;
     width: 35vw;
+    height: auto;
     top: -10vh;
     right: 10vw;
 }
@@ -30,4 +30,34 @@
 #market4 .pin .header {
     font-size: 5vw;
     font-family: 'Bebas Neue'
+}
+
+@media only screen and (max-width: 1400px) {
+    #market4 #PPT {
+        font-size: 15.3vw !important;
+    }
+
+    #market4 .header {
+        font-size: 5vw !important;
+    }
+    
+    #market4 #domiciliario {
+        position: absolute;
+        width: 30vw !important;
+        height: auto;
+        top: -10vh;
+        right: 10vw;
+    }
+
+    #market4 > .fp-tableCell > .header {
+        margin-top: 40vh !important;
+        font-family: 'Bebas Neue Light';
+    }
+    
+    
+    #market4 .pin {
+        top: 12vh !important;
+    }
+
+
 }

@@ -7,7 +7,7 @@ export default class Third extends React.Component {
     render() {
         return (
             <div id="eighth" className="section">
-                <h1 className="header">PESCADO PARA TODOS</h1>
+                <h1 id="PPT" className="header">PESCADO PARA TODOS</h1>
                 <div className="pin">
                     <div className="header">¡PIDE YA!</div>
                 </div>
