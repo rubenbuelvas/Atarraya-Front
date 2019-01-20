@@ -8,7 +8,7 @@ export default class RecipeBox extends React.Component {
         return (
             <div className="recipe box">
                 <a href={`/recipes/${recipe.id}`}>
-                    <img className="thumbnail" src={recipe.imageUrl} alt="Thumbnail"/>
+                    <img className="thumbnail" src={recipe.image_url} alt="Thumbnail"/>
                     <p>{recipe.title}</p>
                 </a>
             </div>

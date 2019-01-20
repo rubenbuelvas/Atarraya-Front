@@ -6,13 +6,13 @@ type Product {
     tags: [Int]
     description: String
     discountType: Int!
-    imageURL: [String]!
+    image_url: [String]!
 }
 
 type Tag {
     id: Int!
     name: String!
-    imageUrl: String!
+    image_url: String!
 }
 
 type Discount {
@@ -31,7 +31,7 @@ type Recipe {
     ingredients: [Int]!         // ids de los productos Atarraya usados
     otherIngredients: [String]  // productos que no son de la tienda. "Sal al gusto" o cosas así.
     steps: [String]!
-    imageURL: String!
+    image_url: String!
 }
 
 type Purchase {

@@ -1,37 +1,26 @@
 #sixth  h1 {
     position: absolute;
-    top: 70vh;
-    left: 5vw;
+    z-index: 1;
+    top: 72vh;
+    left: 8vw;
     color: white;
     font-family: 'Bebas Neue Light';
-    font-size: 15vw;
+    font-size: 12vw;
 }
 
-#sixth img {
-    margin-left: 0vw;
-    height: 79vh;
-}
-
-#sixth .pin {
-    top: 45%;
-    left: 20%;
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 13vw;
-    background-color: white;
-    text-align: center;
-    cursor: pointer;
-    color: #2C4663;
+#sixth .image {
+    position: relative;
+    margin-left: 5vw;
+    width: 80vw;
+    height: 82vh;
+    background-size: cover;
+    color: white;
     font-family: 'Bebas Neue';
+    font-size: 2vw;
 }
 
-#sixth .pin .header {
-    margin-top: 10vw;
-    font-size: 10vw;
-}
-
-#sixth .pin p {
-    margin-top: 3vw;
-    font-size: 5vw;
+#sixth .image span {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
 }

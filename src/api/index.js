@@ -2,17 +2,17 @@ export const articles = [
     {
         id: 1,
         title: 'La nueva cocina colombiana',
-        imageUrl: '/stock/tocino.jpg'
+        image_url: '/stock/tocino.jpg'
     },
     {
         id: 2,
         title: 'El influencer que sólo cocina Atarraya',
-        imageUrl: '/stock/tocino.jpg'
+        image_url: '/stock/tocino.jpg'
     },
     {
         id: 3,
         title: '10 beneficios de comer atún',
-        imageUrl: '/stock/tocino.jpg'
+        image_url: '/stock/tocino.jpg'
     },
 ];
 
@@ -52,17 +52,17 @@ export const recipes = [
     {
         id: 0,
         title: 'Hamburguesas de salmón',
-        imageUrl: '/stock/hamburguesa-salmon.png'
+        image_url: '/stock/hamburguesa-salmon.png'
     },
     {
         id: 1,
         title: 'Salmón a la parrilla con vegetales',
-        imageUrl: '/stock/hamburguesa-salmon.png'
+        image_url: '/stock/hamburguesa-salmon.png'
     },
     {
         id: 2,
         title: 'Ensalada cítrica de salmón',
-        imageUrl: '/stock/hamburguesa-salmon.png'
+        image_url: '/stock/hamburguesa-salmon.png'
     }
 ]
 
@@ -70,11 +70,11 @@ export const tags = [
     {
         key: 'Internacional',
         text: 'Chileno',
-        imageUrl: '/icons/mundo.png'
+        image_url: '/icons/mundo.png'
     },
     {
         key: 'Congelado',
         text: 'Congelado',
-        imageUrl: '/icons/congelado.png'
+        image_url: '/icons/congelado.png'
     }
 ]

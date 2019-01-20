@@ -83,11 +83,8 @@ export default class Recipe extends React.Component {
                 <br/>
 
                 <ArticleGrid type="blog" articles={articles} />
-                <ArticleGrid type="blog" articles={articles} />
 
-                <div class="footer-wrapper">
-                    <FullFooter />
-                </div>
+                <FullFooter />
             </div>
         );
     }
