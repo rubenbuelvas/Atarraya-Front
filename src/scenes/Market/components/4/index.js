@@ -7,11 +7,11 @@ export default class Third extends React.Component {
     render() {
         return (
             <div id="market4" className="section">
-                <h1 className="header">PESCADO PARA TODOS</h1>
+                <h1 id="PPT" className="header">PESCADO PARA TODOS</h1>
                 <div className="pin">
                     <div className="header">¡PIDE YA!</div>
                 </div>
-                <img id="domiciliario" src="images/domiciliario.png" alt=""/>
+                <img id="domiciliario" src="/images/domiciliario.png" alt=""/>
                 <Footer />
             </div>
         );

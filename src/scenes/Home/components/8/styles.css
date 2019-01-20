@@ -32,3 +32,32 @@
     font-family: 'Bebas Neue'
 }
 
+@media only screen and (max-width: 1400px) {
+    #eighth #PPT {
+        font-size: 15.3vw !important;
+    }
+
+    #eighth .header {
+        font-size: 5vw !important;
+    }
+    
+    #eighth #domiciliario {
+        position: absolute;
+        width: 30vw !important;
+        height: auto;
+        top: -10vh;
+        right: 10vw;
+    }
+
+    #eighth > .fp-tableCell > .header {
+        margin-top: 40vh !important;
+        font-family: 'Bebas Neue Light';
+    }
+    
+    
+    #eighth .pin {
+        top: 12vh !important;
+    }
+
+
+}

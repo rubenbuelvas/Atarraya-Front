@@ -56,3 +56,12 @@
     color: white;
 }
 
+@media only and screen (max-width: 1400px){
+    
+    #footer {
+        position: relative;
+        height: 30vh;
+        width: 85vw;
+        margin: auto;
+    }
+}
