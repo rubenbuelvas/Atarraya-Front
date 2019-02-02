@@ -1,10 +1,10 @@
 #marketThird .header {
-    color: white;
+    color: #2C4663;
     font-family: 'Bebas Neue Light';
     font-size: 8vw;
     letter-spacing: 0.8vw;
     margin-top: 3vh;
-    direction: rtl;
+    margin-left: 8vw;
 }
 
 #marketThird .ui.container {

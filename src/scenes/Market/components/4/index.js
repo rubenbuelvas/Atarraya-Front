@@ -1,19 +1,38 @@
 import React from 'react';
-import Footer from 'components/Footer';
-
+import ProductPin from 'components/ProductPin';
+import { data } from 'api';
 import './styles.css';
 
 export default class Third extends React.Component {
     render() {
+        const width = 16;
         return (
-            <div id="market4" className="section">
-                <h1 id="PPT" className="header">PESCADO PARA TODOS</h1>
-                <div className="pin">
-                    <div className="header">¡PIDE YA!</div>
+            <div id="marketFourth" className="section">
+                <h2 className="header">#MARISCOS</h2>
+                <div className="ui container">
+                    <div className="ui three column grid">
+                        <div className="column">
+                            <ProductPin width={width} product={data[0]} />
+                        </div>
+                        <div className="column">
+                            <ProductPin width={width} product={data[0]} />
+                        </div>
+                        <div className="column">
+                            <ProductPin width={width} product={data[0]} />
+                        </div>
+                        <div className="column">
+                            <ProductPin width={width} product={data[0]} />
+                        </div>
+                        <div className="column">
+                            <ProductPin width={width} product={data[0]} />
+                        </div>
+                        <div className="column">
+                            <ProductPin width={width} product={data[0]} />
+                        </div>
+                    </div>
                 </div>
-                <img id="domiciliario" src="/images/domiciliario.png" alt=""/>
-                <Footer />
             </div>
         );
     }
-}   
+}
+

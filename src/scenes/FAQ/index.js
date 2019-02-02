@@ -10,8 +10,8 @@ export default class FAQ extends React.Component {
         return (
             <div id="faq">
                 <Navbar />
-                <div className="container">
-                <div id="faq-container">
+                <div>
+                    <div id="faq-container">
                     <h1>Preguntas frecuentes</h1>
                 
                     <h3>¿Cómo puedo hacer mis pedidos?</h3>
@@ -39,9 +39,9 @@ export default class FAQ extends React.Component {
                     se dedican a crear las mejores recetas para ti. Queremos que nos conozcas. Nuestro equipo Atarraya está conformado por chefs y
                     fotógrafos que se dedican a crear las mejores recetas para ti. Queremos que nos conozcas. Nuestro equipo Atarraya está
                     conformado por chefs y fotógrafos que se dedican a crear las mejores recetas para ti...</p>
-                </div>
+                    </div>
 
-                <div id="contact-container">
+                    <div id="contact-container">
                     <h1>#contacto</h1>
 
                     <div className="ui grid">
@@ -68,9 +68,8 @@ export default class FAQ extends React.Component {
                     </div>
 
                 </div>
-
                 </div>
-                            </div>
+            </div>
         );
     }
 }

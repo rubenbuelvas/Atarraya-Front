@@ -36,25 +36,26 @@ class SidebarWrapper extends React.Component {
     super();
 
     this.state = {
-      visible: false
+      sidebarVisible: false,
+      cartVisible: true
     }
-
-    this.toggleVisible = this.toggleVisible.bind(this);
+    
+    this.toggleCart = this.toggleCart.bind(this);
   }
 
-  toggleVisible = () => this.setState({ visible: true })
+  toggleCart = (cartVisible) => this.setState(cartVisible);
 
   render() {
-    const { visible } = this.state;
+    const { sidebarVisible } = this.state;
     return (
       <div id="wrapper">
-        <SidebarIcon onClick={this.toggleVisible} visible={visible} />
+        <SidebarIcon onClick={() => this.setState({ sidebarVisible: true })} visible={sidebarVisible} />
         <BasketIcon />
 
         <Sidebar.Pushable>
-          <LocalSidebar visible={visible} onHide={() => this.setState({ visible: false })} />
+          <LocalSidebar visible={sidebarVisible} onHide={() => this.setState({ sidebarVisible: false })} />
 
-          <Sidebar.Pusher dimmed={visible}>
+          <Sidebar.Pusher dimmed={sidebarVisible}>
             <div id="app">
               <Switch>
                 <Route exact path="/" component={Home} />

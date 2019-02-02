@@ -1,0 +1,12 @@
+#marketFifth .header {
+    color: white;
+    font-family: 'Bebas Neue Light';
+    font-size: 8vw;
+    letter-spacing: 0.8vw;
+    margin-top: 7vh;
+    text-align: center;
+}
+
+#marketFifth .ui.container {
+    display: block;
+}
