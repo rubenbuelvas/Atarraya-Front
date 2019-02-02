@@ -6,6 +6,7 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 import { persistor, store } from './store';
 
 import Market from './scenes/Market';
+import Admin from './scenes/Admin';
 import Home from './scenes/Home';
 import Cart from './scenes/Cart';
 import Article from './scenes/Article';
@@ -57,6 +58,7 @@ class SidebarWrapper extends React.Component {
             <div id="app">
               <Switch>
                 <Route exact path="/" component={Home} />
+                <Route path="/admin" component={Admin} />
                 <Route path="/market" component={Market} />
                 <Route path="/cart" component={Cart} />
                 <Route path="/checkout" component={Checkout} />
