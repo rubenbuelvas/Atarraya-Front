@@ -1,0 +1,11 @@
+@media screen and (max-width: 1224px) {
+    #homeSecond {
+        text-align: center;
+    }
+
+    #homeSecond h1 {
+        font-size: 4em;
+        letter-spacing: 3px;
+        color: white;
+    }
+}

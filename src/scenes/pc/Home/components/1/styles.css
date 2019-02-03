@@ -1,0 +1,24 @@
+@media screen and (max-width:  1224px) {
+    #homeFirst {
+        text-align: center;
+    }
+
+    #home-logo {
+        margin-top: 5vh;
+        width: 45%;
+    }
+
+    #homeFirst h1 {
+        margin-top: 5vh;
+
+        font-size: 16vw;
+        letter-spacing: 4px;
+        color: #2C4663;
+    }
+
+    #homeFirst .ui.input input {
+        width: 80vw;
+        font-size: 1.2em;
+        border-radius: 1.2em;
+    }
+}

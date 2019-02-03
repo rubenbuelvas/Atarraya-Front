@@ -1,0 +1,32 @@
+@media screen and (max-width: 1224px) {
+    #homeFifth h1 {
+        position: absolute;
+        z-index: 1;
+        top: 12vh;
+        right: 10vw;
+        color: white;
+        font-family: 'Bebas Neue Light';
+        font-size: 18vw;
+    }
+    
+    #homeFifth .image {
+        position: relative;
+        margin-top: 15vh;
+        width: 80vw;
+        height: 80vh;
+        background-size: cover;
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size: 7vw;
+    }
+    
+    #homeFifth .image span {
+        position: absolute;
+        bottom: 4vw;
+        right: 4vw;
+    }
+
+    #homeFifth .next {
+        color: white;
+    }
+}

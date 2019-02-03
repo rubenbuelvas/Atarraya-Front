@@ -4,13 +4,13 @@ import './styles.css';
 
 export default class ProductPin extends React.Component {
     render() {
-        const { dark, width, color, product } = this.props;
+        const { dark, size, color, product } = this.props;
         return (
             <div className="product pin" 
                 style={{
-                    width: `${width}vw`, 
-                    height: `${width}vw`,
-                    borderRadius: `${width/2}vw`,
+                    width: `${size}vw`, 
+                    height: `${size}vw`,
+                    borderRadius: `${size/2}vw`,
                     backgroundColor: color,
                     color: dark ? 'white' : '#2C4663',
                     ...this.props.style

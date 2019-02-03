@@ -1,4 +1,4 @@
-.cart.container {
+#cart-container {
   width: 7em;
   z-index: 1;
   position: absolute;
@@ -13,7 +13,7 @@
   height: auto;
 }
 
-.cart.container > .ui.label {
+#cart-label {
   position: absolute;
   right: 0;
   margin-top: -2vh;
@@ -25,5 +25,15 @@
 
   border-width: 1px;
   border-color: white;
+}
 
+@media screen and (max-width: 1224px) {
+  #cart-container {
+    width: 5.4em;
+    margin-right: 6vw;
+  }
+
+  #cart {
+    width: 90%;
+  }
 }

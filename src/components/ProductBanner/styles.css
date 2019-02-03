@@ -1,6 +1,4 @@
 .product.banner {
-    /* background-color: #2C4663; */
-    height: 60vh;
     width: 30vw;
 }
 
@@ -10,14 +8,14 @@
 }
 
 .product.banner .wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .product.banner .description {
     text-align: center;
-    font-size: 2vw !important;
+    font-size: 1.8em !important;
 }
 
 .product.banner p {
@@ -28,4 +26,14 @@
 .product.banner i {
     padding-bottom: 5vh;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1224px) {
+    .product.banner {
+        width: 45vh;
+    }
+
+    .product.banner .wrapper {
+        width: 35vw;
+    }
 }

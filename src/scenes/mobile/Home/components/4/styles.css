@@ -1,0 +1,23 @@
+@media screen and (max-width: 1224px) {
+    #fourth img {
+        margin: 0;
+    }
+
+    #fourth .pin {
+        top: 60vh;
+        left: 10vw;
+        width: 40vw;
+        height: 40vw;
+        border-radius: 20vw;
+    }
+    
+    #fourth .pin .header {
+        margin-top: 14vw;
+        font-size: 14vw;
+    }
+    
+    #fourth .pin p {
+        margin-top: 3vw;
+        font-size: 8vw;
+    }
+}

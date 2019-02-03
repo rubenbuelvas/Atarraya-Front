@@ -1,4 +1,7 @@
-#full-footer { position: relative; }
+#full-footer { 
+    position: absolute;
+    bottom: 0;
+}
 
 #full-footer > .header {
     color: #2C4663;
@@ -34,3 +37,57 @@
     font-family: 'Bebas Neue'
 }
 
+@media only screen and (max-width: 1400px) {
+    #full-footer > .header {
+        font-size: 15.3vw !important;
+    }
+
+    #full-footer .pin .header {
+        font-size: 5vw !important;
+    }
+    
+    #full-footer #domiciliario {
+        position: absolute;
+        width: 30vw !important;
+        height: auto;
+        top: -10vh;
+        right: 10vw;
+    }
+
+    #eighth > .fp-tableCell > .header {
+        margin-top: 40vh !important;
+        font-family: 'Bebas Neue Light';
+    }
+    
+    
+    #full-footer .pin {
+        top: 12vh !important;
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    #full-footer .pin {
+        position: absolute;
+        width: 24vw;
+        height: 24vw;
+        text-align: center;
+        line-height: 25vw;
+        bottom: 50vh;
+        left: 50vw;
+        border-radius: 12vw;
+        background: #2C4663;
+        color: white;
+    }
+
+    #full-footer #domiciliario {
+        position: absolute;
+        top: 20vh;
+        width: 50vw !important;
+        height: auto;
+        right: 25vw;
+    }
+
+    #full-footer .pin .header {
+        font-size: 7vw !important;
+    }
+} 

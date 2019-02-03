@@ -5,20 +5,24 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/lib/integration/react';
 import { persistor, store } from './store';
 
-import Market from './scenes/Market';
-import Admin from './scenes/Admin';
-import Home from './scenes/Home';
-import Cart from './scenes/Cart';
-import Article from './scenes/Article';
-import Buy from './scenes/Buy';
-import Login from './scenes/Login';
-import Faq from './scenes/FAQ';
-import Signup from './scenes/Signup';
-import Profile from './scenes/Profile';
-import Lifestyle from './scenes/Lifestyle';
-import Recipe from './scenes/Recipe';
-import NotFound from './scenes/404';
-import Checkout from './scenes/Checkout';
+import MediaQuery from 'react-responsive';
+
+import Home from './scenes/pc/Home';
+import Market from './scenes/pc/Market';
+import Admin from './scenes/pc/Admin';
+import Cart from './scenes/pc/Cart';
+import Article from './scenes/pc/Article';
+import Buy from './scenes/pc/Buy';
+import Login from './scenes/pc/Login';
+import Faq from './scenes/pc/FAQ';
+import Signup from './scenes/pc/Signup';
+import Profile from './scenes/pc/Profile';
+import Lifestyle from './scenes/pc/Lifestyle';
+import Recipe from './scenes/pc/Recipe';
+import NotFound from './scenes/pc/404';
+import Checkout from './scenes/pc/Checkout';
+
+import MobileHome from './scenes/mobile/Home';
 
 import BasketIcon from './components/BasketIcon';
 import SidebarIcon from './components/SidebarIcon';
@@ -57,23 +61,31 @@ class SidebarWrapper extends React.Component {
 
           <Sidebar.Pusher dimmed={sidebarVisible}>
             <div id="app">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/admin" component={Admin} />
-                <Route path="/market" component={Market} />
-                <Route path="/cart" component={Cart} />
-                <Route path="/checkout" component={Checkout} />
-                <Route path="/login" component={Login} />
-                <Route path="/faq" component={Faq} />
-                <Route path="/signup" component={Signup} />
-                <Route path="/me" component={Profile} />
-                <Route path="/buy/:id" component={Buy} />
-                <Route path="/lifestyle" component={Lifestyle} />
-                <Route path="/blog/:id" component={Article} />
-                <Route path="/recipes/:id" component={Recipe} />
-                <Route exact path="/404" component={NotFound} />
-                <Redirect to="/404" />
-              </Switch>
+              <MediaQuery query="(min-device-width: 1224px)">
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/admin" component={Admin} />
+                  <Route path="/market" component={Market} />
+                  <Route path="/cart" component={Cart} />
+                  <Route path="/checkout" component={Checkout} />
+                  <Route path="/login" component={Login} />
+                  <Route path="/faq" component={Faq} />
+                  <Route path="/signup" component={Signup} />
+                  <Route path="/me" component={Profile} />
+                  <Route path="/buy/:id" component={Buy} />
+                  <Route path="/lifestyle" component={Lifestyle} />
+                  <Route path="/blog/:id" component={Article} />
+                  <Route path="/recipes/:id" component={Recipe} />
+                  <Route exact path="/404" component={NotFound} />
+                  <Redirect to="/404" />
+                </Switch>
+              </MediaQuery>
+              <MediaQuery query="(max-device-width: 1224px)">
+                <Switch>
+                  <Route exact path="/" component={MobileHome} />
+                  <Redirect to="/404" />
+                </Switch>
+              </MediaQuery>
             </div>            
           </Sidebar.Pusher>
         </Sidebar.Pushable>

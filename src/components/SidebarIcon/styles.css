@@ -17,3 +17,13 @@
   -webkit-text-stroke-color: white;
   font-size: 5em;
 }
+
+@media screen and (max-width: 1224px) {
+  #sidebar-icon-container {
+    margin-top: 5.5em;
+  }
+
+  #sidebar-icon {
+    font-size: 3.5em;
+  }
+}
