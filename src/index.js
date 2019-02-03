@@ -23,6 +23,7 @@ import NotFound from './scenes/pc/404';
 import Checkout from './scenes/pc/Checkout';
 
 import MobileHome from './scenes/mobile/Home';
+import MobileMarket from './scenes/mobile/Market';
 
 import BasketIcon from './components/BasketIcon';
 import SidebarIcon from './components/SidebarIcon';
@@ -83,6 +84,7 @@ class SidebarWrapper extends React.Component {
               <MediaQuery query="(max-device-width: 1224px)">
                 <Switch>
                   <Route exact path="/" component={MobileHome} />
+                  <Route exact path="/market" component={MobileMarket} />
                   <Redirect to="/404" />
                 </Switch>
               </MediaQuery>

@@ -1,0 +1,49 @@
+#marketFirst {
+    text-align: center;
+}
+
+#marketFirst .page-title {
+    font-size: 14vw;
+    margin-top: 8vw;
+    margin-left: 8vw;
+    font-family: 'Bebas Neue';
+    letter-spacing: 5px;
+    color: #2C4663;
+}
+
+#marketFirst .query {
+    margin-top: 7vw;
+    text-align: center;
+}
+
+#marketFirst .query .ui.search input {
+    width: 60vw;
+    height: auto;
+    font-size: 2em;
+    background-color: #7D9EAF;
+    color: #275D7A;
+}
+
+#marketFirst .query .ui.grid {
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 1224px) {
+    #home-logo {
+        margin-top: 5vh;
+        width: 45%;
+    }
+
+    #marketFirst .pin {
+        margin: auto;
+        margin-top: 5vh;
+        background-color: #2C4663;
+        width: 44vw;
+        height: 44vw;
+        line-height: 44vw;
+        border-radius: 22vw;
+        font-family: 'Bebas Neue';
+        font-size: 10vw;
+        color: white;
+    }
+}

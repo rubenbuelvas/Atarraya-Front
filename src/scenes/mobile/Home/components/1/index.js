@@ -3,6 +3,8 @@ import ProductBanner from 'components/ProductBanner';
 
 import { data } from 'api';
 
+import './styles.css';
+
 export default class MobileHome extends React.Component {
     render() {
         return (

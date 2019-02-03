@@ -1,0 +1,12 @@
+@media screen and (max-width: 1224px) {
+    #marketThird .fp-tableCell {
+        vertical-align: middle;
+    }
+
+    #marketThird .page-header {
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size: 20vw;
+        text-align: center;
+    }
+}

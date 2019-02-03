@@ -65,7 +65,11 @@
     }
 }
 
-@media screen and (max-width: 1224px) {
+@media only screen and (max-width: 1224px) {
+    #full-footer > .header {
+        font-size: 14vw !important;
+    }
+
     #full-footer .pin {
         position: absolute;
         width: 24vw;

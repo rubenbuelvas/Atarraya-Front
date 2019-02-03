@@ -1,0 +1,12 @@
+@media screen and (max-width: 1224px) {
+    #marketFourth .fp-tableCell {
+        vertical-align: middle;
+    }
+
+    #marketFourth .page-header {
+        color: #2C4663;
+        font-family: 'Bebas Neue';
+        font-size: 20vw;
+        text-align: center;
+    }
+}

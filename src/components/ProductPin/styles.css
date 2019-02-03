@@ -19,3 +19,13 @@
     text-decoration: underline;
     font-size: 1vw;
 }
+
+@media screen and (max-width: 1224px) {
+    .product.pin img {
+        max-height: 60%;
+    }
+
+    .product.pin p {
+        font-size: 1em;
+    }
+}

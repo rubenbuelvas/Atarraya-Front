@@ -31,7 +31,7 @@ export default class ProductPinList extends React.Component {
                             {
                                 products.map(product => 
                                 <div key={product.id} className="column">
-                                    <ProductPin size={pinSize ? pinSize : '14'} product={product}/>
+                                    <ProductPin size={pinSize ? pinSize : '14'} product={product} {...this.props} />
                                 </div>)
                             }
                         </div>
