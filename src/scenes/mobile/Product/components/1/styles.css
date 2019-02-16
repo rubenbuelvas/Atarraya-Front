@@ -1,0 +1,48 @@
+@media screen and (max-width: 1224px) {
+    #buy1 {
+        text-align: center;
+    }
+
+    #buy1 .header { 
+        margin-top: 6vh;
+    }
+
+    #buy1 .carrousel {
+        margin-top: 5vh;
+    }
+
+    #buy1 .carrousel img {
+        width: 45vw;
+    }
+
+    #buy1 .buy-info {
+        float: unset;
+        margin: auto;
+        margin-top: 2vh;
+        width: 80vw;
+        height: 20vh;
+    }
+
+    #buy1 .buy-info .price {
+        margin-top: 1vh;
+        font-size: 5vw;
+    }
+
+    #buy1 .buy-info .tags {
+        margin: auto;
+    }
+
+    #buy1 .button {
+        width: 30vw;
+        height: 6vh;
+        line-height: 6vh;
+        font-size: 8vw;
+        margin: auto;
+    }
+
+    #buy1 .ui.input input {
+        margin-top: 1vh;
+        width: 20vw;
+        font-size: 4vw;
+    }
+}

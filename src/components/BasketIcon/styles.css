@@ -29,11 +29,12 @@
 
 @media screen and (max-width: 1224px) {
   #cart-container {
-    width: 5.4em;
-    margin-right: 6vw;
+    width: 15vw;
+    margin-right: 4vw;
+    margin-top: 5vh;
   }
 
   #cart {
-    width: 90%;
+    width: 15vw;
   }
 }

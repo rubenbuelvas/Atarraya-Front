@@ -12,7 +12,7 @@ import Market from './scenes/pc/Market';
 import Admin from './scenes/pc/Admin';
 import Cart from './scenes/pc/Cart';
 import Article from './scenes/pc/Article';
-import Buy from './scenes/pc/Buy';
+import Product from './scenes/pc/Product';
 import Login from './scenes/pc/Login';
 import Faq from './scenes/pc/FAQ';
 import Signup from './scenes/pc/Signup';
@@ -24,6 +24,7 @@ import Checkout from './scenes/pc/Checkout';
 
 import MobileHome from './scenes/mobile/Home';
 import MobileMarket from './scenes/mobile/Market';
+import MobileProduct from './scenes/mobile/Product';
 
 import BasketIcon from './components/BasketIcon';
 import SidebarIcon from './components/SidebarIcon';
@@ -62,7 +63,7 @@ class SidebarWrapper extends React.Component {
 
           <Sidebar.Pusher dimmed={sidebarVisible}>
             <div id="app">
-              <MediaQuery query="(min-device-width: 1224px)">
+              <MediaQuery query="(min-device-width: 1224px), (orientation: landscape)">
                 <Switch>
                   <Route exact path="/" component={Home} />
                   <Route path="/admin" component={Admin} />
@@ -73,7 +74,7 @@ class SidebarWrapper extends React.Component {
                   <Route path="/faq" component={Faq} />
                   <Route path="/signup" component={Signup} />
                   <Route path="/me" component={Profile} />
-                  <Route path="/buy/:id" component={Buy} />
+                  <Route path="/product/:id" component={Product} />
                   <Route path="/lifestyle" component={Lifestyle} />
                   <Route path="/blog/:id" component={Article} />
                   <Route path="/recipes/:id" component={Recipe} />
@@ -85,6 +86,8 @@ class SidebarWrapper extends React.Component {
                 <Switch>
                   <Route exact path="/" component={MobileHome} />
                   <Route exact path="/market" component={MobileMarket} />
+                  <Route exact path="/product/:id" component={MobileProduct} />
+                  <Route path="/recipes/:id" component={Recipe} />
                   <Redirect to="/404" />
                 </Switch>
               </MediaQuery>

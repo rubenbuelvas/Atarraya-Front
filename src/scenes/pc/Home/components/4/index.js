@@ -5,7 +5,7 @@ import './styles.css';
 export default class Third extends React.Component {
     render() {
         return (
-            <div id="fourth" className="section">
+            <div id="homeFourth" className="section">
                 <h1 className="header">#FILETES</h1>
                 <img src="stock/tocino.jpg" alt="atún"/>
 

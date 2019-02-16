@@ -57,7 +57,7 @@ export const recipes = [
     {
         id: 1,
         title: 'Salmón a la parrilla con vegetales',
-        image_url: '/stock/hamburguesa-salmon.png'
+        image_url: '/stock/tocino.jpg'
     },
     {
         id: 2,

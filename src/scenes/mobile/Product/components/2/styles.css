@@ -1,0 +1,11 @@
+@media screen and (max-width: 1224px) {    
+    #buy2 .header {
+        font-family: 'Bebas Neue Light';
+        letter-spacing: 2px;
+        font-size: 10vw;
+        text-align: center;
+        color: #2C4663;
+        margin-top: 6.5vh;
+        margin-left: 1vw;
+    }
+}

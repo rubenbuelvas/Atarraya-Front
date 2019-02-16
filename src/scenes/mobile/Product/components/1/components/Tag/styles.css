@@ -1,0 +1,21 @@
+.tag {
+    display: inline-block;
+    text-align: center;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.tag p {
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 1224px) {
+    .tag img {
+        position: relative;
+        width: 6vw;
+    }
+
+    .tag p {
+        font-size: 2.5vw;
+    }
+}

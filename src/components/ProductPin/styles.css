@@ -1,4 +1,4 @@
-.product.pin {
+.product-pin {
     background-color: white;
     width: 18vw;
     height: 18vw;
@@ -10,22 +10,22 @@
     cursor: pointer;
 }
 
-.product.pin img {
+.product-pin img {
     max-height: 75%;
 }
 
-.product.pin p {
+.product-pin p {
     margin-top: -1.5vw;
     text-decoration: underline;
     font-size: 1vw;
 }
 
 @media screen and (max-width: 1224px) {
-    .product.pin img {
+    .product-pin img {
         max-height: 60%;
     }
 
-    .product.pin p {
+    .product-pin p {
         font-size: 1em;
     }
 }

@@ -137,3 +137,10 @@ a {
   - camarón: #D591B4
   - anillos calamar: #6AAEA7
 */
+
+@media screen and (max-width: 1224px) {
+  #home-logo {
+    margin-top: 5vh;
+    width: 45%;
+  }
+}

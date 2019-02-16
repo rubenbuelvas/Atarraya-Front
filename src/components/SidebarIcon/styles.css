@@ -20,10 +20,12 @@
 
 @media screen and (max-width: 1224px) {
   #sidebar-icon-container {
-    margin-top: 5.5em;
+    margin-top: 5vh;
+    line-height: 8vh;
   }
 
   #sidebar-icon {
-    font-size: 3.5em;
+    font-size: 8vw;
+    width: 60%;
   }
 }

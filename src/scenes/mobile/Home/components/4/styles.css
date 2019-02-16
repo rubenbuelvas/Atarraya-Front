@@ -1,9 +1,9 @@
 @media screen and (max-width: 1224px) {
-    #fourth img {
+    #homeFourth img {
         margin: 0;
     }
 
-    #fourth .pin {
+    #homeFourth .pin {
         top: 60vh;
         left: 10vw;
         width: 40vw;
@@ -11,12 +11,12 @@
         border-radius: 20vw;
     }
     
-    #fourth .pin .header {
+    #homeFourth .pin .header {
         margin-top: 14vw;
         font-size: 14vw;
     }
     
-    #fourth .pin p {
+    #homeFourth .pin p {
         margin-top: 3vw;
         font-size: 8vw;
     }

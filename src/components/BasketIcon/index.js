@@ -8,7 +8,7 @@ class BasketIcon extends React.Component {
         return (
             <a href="/cart">
                 <div id="cart-container">
-                    <img id="cart" src="/images/cart.png" alt=""/>
+                    <img id="cart" src="/icons/alt-cart.png" alt=""/>
                     {
                         this.props.products ?
                         <div id="cart-label" className="ui circular label">{this.props.products}</div>

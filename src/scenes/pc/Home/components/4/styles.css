@@ -1,4 +1,4 @@
-#fourth  h1 {
+#homeFourth  h1 {
     position: absolute;
     top: 5vh;
     left: 5vw;
@@ -7,11 +7,11 @@
     font-size: 15vw;
 }
 
-#fourth img {
+#homeFourth img {
     margin-left: 8vw;
 }
 
-#fourth .pin {
+#homeFourth .pin {
     top: 45%;
     left: 20%;
     position: absolute;
@@ -25,12 +25,12 @@
     font-family: 'Bebas Neue';
 }
 
-#fourth .pin .header {
+#homeFourth .pin .header {
     margin-top: 10vw;
     font-size: 10vw;
 }
 
-#fourth .pin p {
+#homeFourth .pin p {
     margin-top: 3vw;
     font-size: 5vw;
 }
