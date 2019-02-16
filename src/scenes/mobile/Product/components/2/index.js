@@ -5,7 +5,7 @@ import { recipes } from 'api';
 
 import './styles.css';
 import ProductPin from 'components/ProductPin';
-import RecipeCarousel from './components/RecipeCarousel';
+import RecipeSlideshow from './components/RecipeSlideshow';
 
 export default class MobileProductSecond extends React.Component {
     render() {
@@ -13,7 +13,7 @@ export default class MobileProductSecond extends React.Component {
             <div id="buy2" className="section">
                 <h1 className="header">¿QUÉ PREPARAR?</h1>
 
-                <RecipeCarousel recipes={recipes} />
+                <RecipeSlideshow recipes={recipes} />
                 
                 <ProductPin dark product={data[0]} color="#2C4663" size={38} style={{marginTop: '22vh'}} />
             </div>

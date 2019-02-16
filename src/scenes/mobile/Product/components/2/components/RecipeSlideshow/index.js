@@ -2,7 +2,7 @@
 
 import './styles.css';
 
-export default class RecipeCarousel extends React.Component {
+export default class RecipeSlideshow extends React.Component {
     state = {
         idx: 0,
         leftVisible: false,
@@ -41,14 +41,14 @@ export default class RecipeCarousel extends React.Component {
         const recipe = recipes[idx];
 
         return (
-            <div className="recipe-carousel">
-                {rightVisible ? <i id="recCarRight" className="huge right angle icon" onClick={this.next}></i> : ''}
-                {leftVisible ? <i id="recCarLeft" className="huge left angle icon" onClick={this.back}></i> : ''}
+            <div className="recipe-slideshow">
+                {rightVisible ? <i id="recSliRight" className="huge right angle icon" onClick={this.next}></i> : ''}
+                {leftVisible ? <i id="recSliLeft" className="huge left angle icon" onClick={this.back}></i> : ''}
                 <div onClick={() => window.location.replace(`/recipes/${recipe.id}`)} className="currentPic">
                     <div style={{ backgroundImage: `url(${recipe.image_url}` }} className="image"></div>
                 </div>
 
-                <a href={`/recipes/${recipe.id}`} className="reccar-name">{recipe.title}</a>
+                <a href={`/recipes/${recipe.id}`} className="recsli-name">{recipe.title}</a>
             </div>
         );
     }

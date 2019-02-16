@@ -25,6 +25,7 @@ import Checkout from './scenes/pc/Checkout';
 import MobileHome from './scenes/mobile/Home';
 import MobileMarket from './scenes/mobile/Market';
 import MobileProduct from './scenes/mobile/Product';
+import MobileLifestyle from './scenes/mobile/Lifestyle';
 
 import BasketIcon from './components/BasketIcon';
 import SidebarIcon from './components/SidebarIcon';
@@ -87,7 +88,19 @@ class SidebarWrapper extends React.Component {
                   <Route exact path="/" component={MobileHome} />
                   <Route exact path="/market" component={MobileMarket} />
                   <Route exact path="/product/:id" component={MobileProduct} />
+                  <Route path="/lifestyle" component={MobileLifestyle} />
+
+
+                  <Route path="/admin" component={Admin} />
+                  <Route path="/cart" component={Cart} />
+                  <Route path="/checkout" component={Checkout} />
+                  <Route path="/login" component={Login} />
+                  <Route path="/faq" component={Faq} />
+                  <Route path="/signup" component={Signup} />
+                  <Route path="/me" component={Profile} />
+                  <Route path="/blog/:id" component={Article} />
                   <Route path="/recipes/:id" component={Recipe} />
+                  <Route exact path="/404" component={NotFound} />
                   <Redirect to="/404" />
                 </Switch>
               </MediaQuery>

@@ -1,21 +1,21 @@
-.recipe-carousel .currentPic {
+.recipe-slideshow .currentPic {
     height: 30vh;
     line-height: 30vh;
 }
 
-#recCarRight {
+#recSliRight {
     float: right;
     color: #2C4663;
     margin-top: 15vh;
 }
 
-#recCarLeft {
+#recSliLeft {
     position: absolute;
     color: white;
     margin-top: 15vh;
 }
 
-.recipe-carousel .image {
+.recipe-slideshow .image {
     margin-top: 5vh;
     background-size: cover;
     height: 30vh;
@@ -23,7 +23,7 @@
     display: inline-block;
 }
 
-.recipe-carousel .reccar-name {
+.recipe-slideshow .recsli-name {
     color: #2C4663;
     font-family: 'Bebas Neue';
     font-size: 8vw;

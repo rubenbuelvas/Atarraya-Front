@@ -1,0 +1,23 @@
+.recipe-slide .currentPic {
+    height: 30vh;
+    line-height: 30vh;
+}
+
+.recipe-slide .image {
+    margin-top: 5vh;
+    background-size: cover;
+    height: 23vh;
+    width: 100vw;
+    display: inline-block;
+}
+
+.recipe-slide .recslide-name {
+    color: #2C4663;
+    font-family: 'Bebas Neue';
+    font-size: 8vw;
+    float: right;
+    text-align: right;
+    width: 90%;
+    line-height: 8vw;
+    margin-right: 5vw;
+}

@@ -1,0 +1,9 @@
+@media screen and (max-width:  1224px) {
+    #lifestyle3 .page-title {
+        text-align: center;
+        color: #2C4663;
+        font-size: 18vw;
+        font-family: 'Bebas Neue';
+        margin-top: 9vh;
+    }
+}
