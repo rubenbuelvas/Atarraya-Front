@@ -31,7 +31,6 @@
 
 #recipe-photo {
     width: 100%;
-
     margin-top: 5vh;
 }
 
@@ -84,4 +83,97 @@
 
 .recipe-main .seven.wide.column {
     text-align: right;
+}
+
+@media screen and (max-width: 1224px) {
+    #recipe { text-align: center; }
+
+    #recipe > h1 {
+        position: relative;
+        float: none;
+        right: 0;
+        color: #2C4663;
+        font-size: 14vw;
+        margin-top: 8vh;
+    }
+    
+    #recipe > .meta {
+        margin-top: 2vh;
+    }
+    
+    #recipe > .meta p {
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+    
+    .recipe-container .item {
+        font-size: 1.5em;
+    }
+    
+    #recipe-photo {
+        width: 100%;    
+        margin-top: 5vh;
+    }
+    
+    .recipe-container {    
+        padding-left: 8vw;
+        padding-right: 8vw;
+    
+        background-color: #2C4663;
+    }
+    
+    .recipe-container h3 {
+        margin-top: 5vh;
+        font-size: 10vw;
+    }    
+    
+    .recipe-info {
+        position: relative;
+    
+        background-color: white;
+    
+        margin-top: -10vh;
+        
+        padding-top: 5vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 5vh;
+    }
+        
+    .recipe-icons .column {
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .recipe-icons .icon {
+        width: 3em;
+        margin: auto;
+        display: block;
+    }
+    
+    .recipe-icons span {
+        font-family: 'Bebas Neue';
+        font-size: 6vw;
+        color: #2C4663;
+        display: block;
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+    
+    .recipe-main {
+        margin-top: 5vh;
+    }
+
+    .recipe-main img {
+        width: 60vw;
+        height: 60vw;
+    }
+    
+    .recipe-main .ui.list, .recipe-steps {
+        text-align: left;
+    }
+
+    .recipe-main .seven.wide.column {
+        text-align: right;
+    }
 }

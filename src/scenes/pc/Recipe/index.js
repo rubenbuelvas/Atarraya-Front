@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MediaQuery from 'react-responsive';
+
 import ArticleGrid from 'components/ArticleGrid';
 import FullFooter from 'components/FullFooter';
 import Navbar from 'components/Navbar';
@@ -12,7 +14,15 @@ export default class Recipe extends React.Component {
     render() {
         return (
             <div id="recipe">
-                <Navbar />
+                <MediaQuery query="(min-device-width: 1224px)">
+                    <Navbar />
+                </MediaQuery>
+
+                <MediaQuery query="(max-device-width: 1224px)">
+                    <div style={{ textAlign: 'center' }}>
+                    <img id="home-logo" src="/images/logo-blue-big.png" alt="Logo"/>
+                    </div>
+                </MediaQuery>
 
                 <h1>#RECETAS</h1>
 
@@ -44,14 +54,34 @@ export default class Recipe extends React.Component {
                             </div>
                         </div>
 
-                        <div className="recipe-main">
-                            <div className="ui grid">
-                                <div className="seven wide column">
-                                    <img src="/stock/hamburguesa-salmon.png" alt="Foto del ingrediente Atarraya"/>
+                        <MediaQuery query="(min-device-width: 1224px)">
+                            <div className="recipe-main">
+                                <div className="ui grid">
+                                    <div className="seven wide column">
+                                        <img src="/stock/hamburguesa-salmon.png" alt="Foto del ingrediente Atarraya"/>
+                                    </div>
+                                    <div className="nine wide column">
+                                        <h3>Ingredientes</h3>
+                                        <div className="ui list">
+                                            <div className="item">250 gramos de Camarón precocido Atarrala</div>
+                                            <div className="item">5 limones</div>
+                                            <div className="item">1 cebolla roja</div>
+                                            <div className="item">Salsa de tomate (al gusto)</div>
+                                            <div className="item">1 cucharada de cilantro picado</div>
+                                            <div className="item">1 plátano verde</div>
+                                            <div className="item">2 tazas de aceite de girasol</div>
+                                            <div className="item">Sal y pimienta</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="nine wide column">
+                            </div>
+                        </MediaQuery>
+
+                        <MediaQuery query="(max-device-width: 1224px)">
+                            <div className="recipe-main">
+                                <img src="/stock/hamburguesa-salmon.png" alt="Foto del ingrediente Atarraya"/>
                                     <h3>Ingredientes</h3>
-                                    <div className="ui list">
+                                    <div className="ui bulleted list">
                                         <div className="item">250 gramos de Camarón precocido Atarrala</div>
                                         <div className="item">5 limones</div>
                                         <div className="item">1 cebolla roja</div>
@@ -61,9 +91,8 @@ export default class Recipe extends React.Component {
                                         <div className="item">2 tazas de aceite de girasol</div>
                                         <div className="item">Sal y pimienta</div>
                                     </div>
-                                </div>
                             </div>
-                        </div>
+                        </MediaQuery>                        
 
                         <br/>
                         <h3>Preparación</h3>
@@ -82,7 +111,15 @@ export default class Recipe extends React.Component {
                 <br/>
                 <br/>
 
-                <ArticleGrid type="blog" articles={articles} />
+                <MediaQuery query="(max-device-width: 1224px)">
+                    <ArticleGrid columns="two" type="blog" articles={articles} />
+                </MediaQuery>
+
+
+                <MediaQuery query="(min-device-width: 1224px)">
+                    <ArticleGrid columns="three" type="blog" articles={articles} />
+                </MediaQuery>
+
 
                 <FullFooter />
             </div>

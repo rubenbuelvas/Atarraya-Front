@@ -56,14 +56,29 @@
     color: white;
 }
 
-@media only screen and (max-width: 1400px){
-    
+@media only screen and (max-width: 1400px) {    
     #footer {
         position: relative;
-        height: 30vh;
+        height: 25vh;
         width: 85vw;
         margin: auto;
     }
+
+    #footer a {
+        font-size: 6vw;
+        font-family: 'Bebas Neue';
+        color: white;
+        display: block;
+        cursor: pointer;
+        letter-spacing: 0px;
+        margin-bottom: 2vh;
+    }
+
+    #footer .column { padding-top: 2vh !important; }
+
+    #footer .first.column { text-align: right; }
+
+    #footer .third.column a { font-size: 2vw; }
 }
 
 @media screen and (max-width: 1224px) {
