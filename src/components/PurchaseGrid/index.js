@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NetPrice from '../NetPrice';
+import NetPrice from './components/NetPrice';
 import PurchaseColumn from './components/PurchaseColumn';
 
 import './styles.css';

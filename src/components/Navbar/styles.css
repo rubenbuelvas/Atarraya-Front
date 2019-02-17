@@ -18,3 +18,9 @@
     font-family: 'Bebas Neue';
     font-size: 4.5vw;
 }
+
+#navbar-container { padding: 0 !important; }
+
+@media screen and (max-width: 1224px) {
+    #navbar-container { text-align: center; }
+}

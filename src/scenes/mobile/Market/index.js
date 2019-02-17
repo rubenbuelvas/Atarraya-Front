@@ -21,7 +21,7 @@ export default class MobileMarket extends React.Component {
                 render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>
-                            <First />
+                            <First click1={() => fullpageApi.moveTo('3')} click2={() => fullpageApi.moveTo('4')} />
                             <Second />
                             <Third />
                             <Fourth />

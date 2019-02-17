@@ -15,7 +15,7 @@
 
 .product.banner .description {
     text-align: center;
-    font-size: 1.8em !important;
+    font-size: 1.8em;
 }
 
 .product.banner p {
@@ -35,5 +35,9 @@
 
     .product.banner .wrapper {
         width: 35vw;
+    }
+
+    .product.banner .description {
+        font-size: 3vh;
     }
 }

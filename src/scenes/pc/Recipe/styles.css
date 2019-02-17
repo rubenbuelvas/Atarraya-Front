@@ -92,7 +92,6 @@
         position: relative;
         float: none;
         right: 0;
-        color: #2C4663;
         font-size: 14vw;
         margin-top: 8vh;
     }
@@ -171,9 +170,5 @@
     
     .recipe-main .ui.list, .recipe-steps {
         text-align: left;
-    }
-
-    .recipe-main .seven.wide.column {
-        text-align: right;
     }
 }

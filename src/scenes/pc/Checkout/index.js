@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import MediaQuery from 'react-responsive';
 import { Checkbox, Dropdown } from 'semantic-ui-react'
 
 import Navbar from 'components/Navbar';
@@ -64,12 +65,21 @@ class Checkout extends React.Component {
 
         return (
             <div id="checkout" style={{ backgroundImage: `url(${BackgroundImage})` }}>
-                <Navbar />
+                <MediaQuery query="(min-device-width: 1224px)">
+                    <Navbar />
+                </MediaQuery>
+
+                <MediaQuery query="(max-device-width: 1224px)">
+                    <div style={{ textAlign: 'center' }}>
+                    <img id="home-logo" src="/images/logo-blue-big.png" alt="Logo"/>
+                    </div>
+                </MediaQuery>
 
                 <h1>#Carrito</h1>
 
                 <div id="checkout-container">
-                    <div className="ui two column grid">
+                    <MediaQuery query="(min-device-width: 1224px)">
+                        <div className="ui two column grid">
                         <div className="column">
                             <h3>Datos de envío</h3>
 
@@ -98,38 +108,41 @@ class Checkout extends React.Component {
                         <div className="column">
                             <div id="checkout-summary">
                                 <h3>Resumen</h3>
-                                {/* <div className="ui grid">
-                                    {(() => {
-                                        return cart.map(product => {
-                                            const view = [];
-                                            const { image_url, id, name } = product;
-                                            view.push(
-                                                <div key={`${id}img`} className="six wide column">
-                                                    <img src={image_url} alt={name}/>
-                                                </div>
-                                            );
-                                            view.push(
-                                                <div key={id} className="ten wide column">
-                                                    <div style={{ marginTop: '2vw'}}>
-                                                        <div className="description">{product.name}</div>
-                                                        <div className="amount">3 unidades</div>
-                                                        <div className="price">$5250</div>
-                                                    </div>
-                                                </div>);
-                                            return view;
-                                        })
-                                    })()}
-                                </div>
-                                <div style={{ marginTop: '2vw' }} className="ui divider"></div>
-                                <div className="total">
-                                    <span>$23.100</span>
-                                    <span>Domicilio $2.000</span>
-                                    <span className="full-price">$25.100</span>
-                                </div> */}
                                 <PurchaseGrid purchases={cart} compact/>
                             </div>
                         </div>
                     </div>
+                    </MediaQuery>
+
+                    <MediaQuery query="(max-device-width: 1224px)">
+                            <h3>Datos de envío</h3>
+
+                            <h5>Dirección</h5>
+                            <div className="ibc">
+                                <Dropdown 
+                                    compact 
+                                    placeholder='Selecciona una dirección de envío...' 
+                                    selection 
+                                    options={addressOptions}
+                                    onChange={this.handleDropdownChange} />
+                            </div>
+
+                            <h3>Método de pago</h3>
+                            <div className="ibc">
+                                <div className={`${method === ENTREGA ? 'active ' : ''}outline button`}
+                                    onClick={() => this.handlePaymentMethod(ENTREGA)}>
+                                    Pago contra entrega</div><br/>
+                                <div className={`${method === PSE ? 'active ' : ''}outline button`}
+                                    onClick={() => this.handlePaymentMethod(PSE)}>
+                                    Débito bancario PSE
+                                </div>
+                            </div>
+
+                            <div id="checkout-summary">
+                                <h3>Resumen</h3>
+                                <PurchaseGrid purchases={cart} compact/>
+                            </div>
+                    </MediaQuery>
 
                     <div className="ibc">
                         <Checkbox label='Acepto políticas de privacidad y manejo de datos.'

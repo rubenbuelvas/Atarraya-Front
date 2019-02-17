@@ -33,12 +33,12 @@
         margin: auto;
         margin-top: 5vh;
         background-color: #2C4663;
-        width: 44vw;
-        height: 44vw;
-        line-height: 44vw;
-        border-radius: 22vw;
+        width: 25vh;
+        height: 25vh;
+        line-height: 25vh;
+        border-radius: 13vh;
         font-family: 'Bebas Neue';
-        font-size: 10vw;
+        font-size: 6vh;
         color: white;
     }
 }

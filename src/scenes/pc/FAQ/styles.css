@@ -53,3 +53,23 @@
     font-family: 'Bebas Neue Light';
     font-size: 1.5vw;
 }
+
+@media screen and (max-width: 1224px) {
+    #faq-container h1 { margin-top: 8vh; }
+
+    #faq-container h3 { 
+        margin-top: 8vh;
+        font-size: 6vw; 
+    }
+
+    #contact-container { 
+        margin-bottom: 5vh;
+        padding: 8vw; 
+    }
+
+    #contact-container label { font-size: 5vw; }
+
+    #contact-container .six.wide.column { text-align: left; }
+
+    #contact-container .ui.input input { width: 35vw; }
+}

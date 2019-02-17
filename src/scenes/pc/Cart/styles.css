@@ -1,8 +1,8 @@
-#cart {
+#cart-page {
     color: #2C4663;
 }
 
-#cart h1 {
+#cart-page h1 {
     height: 12vw;
 
     margin-top: 8vw;
@@ -11,7 +11,7 @@
     -webkit-text-stroke: 1px white;
 }
 
-#cart .pg-wrapper {
+#cart-page .pg-wrapper {
     margin-left: 20vw;
     margin-right: 20vw;
     margin-bottom: 5vh;
@@ -21,15 +21,37 @@
     background-color: white;
 }
 
-#cart .ibc .huge.button {
+#cart-page .ibc .huge.button {
     background-color: white;
     color: #2C4663;
 }
 
-#cart .ibc a {
+#cart-page .ibc a {
     color: white;
     font-family: 'Bebas Neue';
     font-size: 2vw;
     letter-spacing: 3px;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1224px) {
+    #cart-page { text-align: center; }
+
+    #cart-page h1 { margin-top: 5vh; }
+
+    #cart-page .pg-wrapper {
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #cart-page .ibc a:nth-child(2) {
+        margin-top: 4vh;
+        font-size: 5vw;
+        letter-spacing: 3px;
+        text-decoration: underline;
+        display: block;
+        padding-bottom: 6vh;
+    }
+    
 }

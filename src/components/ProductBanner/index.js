@@ -44,11 +44,11 @@ export default class ProductBanner extends React.Component {
                 </div>
 
                 <div className="description">
-                    <i className="angle left icon" onClick={this.moveLeft}></i>
+                    <i className="large angle left icon" onClick={this.moveLeft}></i>
                     <p>
                     <span style={{textTransform: 'uppercase'}}>{product.name}</span> <br/> ({product.weight}) <br/> ${product.price}
                     </p>
-                    <i className="angle right icon" onClick={this.moveRight}></i>
+                    <i className="large angle right icon" onClick={this.moveRight}></i>
                 </div>
             </div>
             </a>
